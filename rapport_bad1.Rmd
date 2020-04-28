@@ -68,7 +68,7 @@ Le jeu de donné est complété pour `r nrow(datatemp)` villes et contient  `r n
  
 ```{r datatempville, echo = F, eval=T, fig.height = 5, fig.width = 6, fig.align = "center", fig.cap="Températures par villes\\label{fig:tempvilles}"}
 villes2<-factor(villes,levels(villes)[order(med)])
-boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7)
+boxplot(temp~villes2,las=2,col="cyan",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7)
 ```
 
 # **Une première analyse **
