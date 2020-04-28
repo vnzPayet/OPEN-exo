@@ -18,11 +18,12 @@ csl: iso690-author-date-fr-no-abstract.csl
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.pos= "h")
-#library(ade4)
-#library(FactoMineR)
-#library(bookdown)
+library(ade4)
+library(FactoMineR)
+library(bookdown)
 library(knitr)
-#library(tibble)
+library(tibble)
+library(factoextra)
 ```
 
 ```{r logo, echo=FALSE, out.width = '12%', fig.align = "center",fig.cap="Logo Rmarkdown"}
@@ -71,14 +72,116 @@ villes2<-factor(villes,levels(villes)[order(med)])
 boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7)
 ```
 
+# **Une première analyse **
+
+Nous réalisons des graphiques permettant d'analyser, par région : 
+
+* La position globale de la températures vis à vis de la moyenne nationale.
+
+  L'évolution mensuelle des températures dont notament : 
+  
+     L'amplitude
+    + L'hétérogénéité inter-villes.
+
+# **Création d'une fonction graphique**
+
+Nous souhaitons produire un graphique representant par région les courbes mensuelles de chaque ville avec la courbe moyenne nationale. Voici un script possible : 
+```{r functemp, echo = F,eval=T}
+Tplot<-function(tempr,tmean) {
+  plot(c(1,12),c(-10,30),type="n",ylab="Temperature (°C)",xlab="Mois",cex.lab=0.8,cex.axis=0.8)
+  apply(tempr[,1:12],1,function(x) lines(1:12,x))
+  text(2,28,tempr$Région[1],cex=0.8)
+  lines(1:12,tmean,lwd=2,col="red")
+}
+```
+
+ *Application*
+
+```{r graphtemp, echo = F,eval=T,fig.height = 5, fig.width = 6,fig.cap="Courbes de températures mensuelles par régions"}
+#température moyenne
+tmean<-apply(datatemp[,1:12],2,mean)
+#Découpage du tableau par région
+sptemp<-split(datatemp,datatemp$Région)
+#Découpage de la fenêtre graphique
+par(mfrow=c(2,2),mar=c(3,3,1,1),mgp=c(2,1,0))
+#Application de la fonction
+plot<-lapply(sptemp,Tplot,tmean)
+#Légende
+legend(4,0,"Moyennes nationales",bty="n",col="red",lwd=2,cex=0.7)
+```
+
+
+**Interpretation**: Nous observons que ........................................................................  
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+
+&nbsp;
+
+
 
 # **Analyse en Composante Principale  **
+
 
 ## **Rappels**
 
 Une ACP permet d'analyser simulatnément les liens entre de multiples variables quantitatives et d'analyser les positions des individus statistiques vis à vis de l'ensemble de ces variables. Elle est basée sur la recheches d'axes principaux indépendants, chacuns plus ou moins liés aux variables d'entrées. Le première axe explique un maximum d'intertie, le second une moindre partie et ainsi de suite. Pour rappel l'intertie totale se calcul par : 
 $$I=\sum^N_{i=1}\frac{1}{N}d^2_{(e_i;g)}$$
 Avec : d^2_{e_i,g}=\sum^p_{j=1}x^2_{ij} = Distance euclidienne au centre de gravité du nuage de point (soit $(0;0)$) avec des données centrée et normées. 
+
+## **Les valeurs propres**
+
+Elles permettent de determiner la proportion d'intertie expliquée par chacuns des axes.  
+
+```{r valp, echo = T,eval=T,fig.cap="Valeurs propres",fig.height = 3, fig.width = 4}
+res <- PCA(datatemp, quanti.sup=13:16, quali.sup=17,graph=F)
+par(mfrow=c(1,1),mar=c(4,4,2,2))
+barplot(res$eig[,2],ylab="Inertie %",names.arg = paste("Axe",1: nrow(res$eig)),las=2,cex.axis=0.7,cex.lab=0.8)
+```
+
+**Interpretation**: Nous observons que l'axe 1 explique `r round(res$eig[1,2],2)`$\%$ de l'intertie totale   
+..................................................................................................................
+..................................................................................................................
+
+## **Le cercle des corrélations**
+
+**Interpretation**: Nous observons que l'axe 1 est expliqué par .......................................................  
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+
+```{r indiv, echo = T,eval=T,fig.cap="Cercle des corrélations",fig.height =5 , fig.width = 5}
+res <- PCA(datatemp, quanti.sup=13:16, quali.sup=17,graph=F)
+plot.PCA(res, choix="var",cex.axis=0.7,cex.lab=0.8)
+```
+
+
+
+
+#### **Le nuage des individus**
+
+```{r circle, echo = T,eval=T,fig.cap="Nuage des individus",fig.height = 5, fig.width = 5, fig.align = "center",}
+plot.PCA(res, choix="ind", habillage=17,cex.axis=0.7,cex.lab=0.8)
+```
+
+**Interpretation**: Nous observons que les villes du nord ouest se caractérisent par   
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+
+&nbsp;
+
 
 ### **Conclusions  **
 
