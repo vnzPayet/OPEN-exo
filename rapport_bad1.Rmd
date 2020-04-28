@@ -31,7 +31,7 @@ knitr::include_graphics("rmarkdown.png")
 
 &nbsp;
 
-Résumé : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
+*Résumé* : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
 ..................................................................................................................
 ..................................................................................................................
 
