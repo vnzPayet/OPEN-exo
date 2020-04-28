@@ -32,7 +32,7 @@ knitr::include_graphics("rmarkdown.png")
 
 &nbsp;
 
-*Résumé* : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
+**Résumé** : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
 ..................................................................................................................
 ..................................................................................................................
 
@@ -129,7 +129,7 @@ Avec : $$d^2_{e_i,g}=\sum^p_{j=1}x^2_{ij} =$$ Distance euclidienne au centre de 
 
 ## **Conclusions  **
 
-Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture @cook2016climate même si @van2013climate suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
+Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture [@cook2016climate] même si [@van2013climate] suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
 ...........................................................................
 
 ...........................................................................
