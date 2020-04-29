@@ -1,0 +1,12 @@
+---  
+title: My Report  
+output: 
+  html_document:
+    toc: yes 
+---
+
+```{r child = 'chapitre1.Rmd'}
+```
+
+```{r child = 'chapitre2.Rmd'}
+```

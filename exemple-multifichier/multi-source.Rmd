@@ -1,0 +1,28 @@
+---
+title: "Exemple de multifichier"
+author: "V.PAYET"
+date: "29/04/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Contexte
+bla bla bla 
+
+## Données
+
+```{r, eval=TRUE, echo=FALSE}
+source("import.r")
+
+```
+    
+
+Mes données ont `r nrow(da)` lignes.
+
+```{r, echo=FALSE}
+source("graphique1.r")
+```
+
