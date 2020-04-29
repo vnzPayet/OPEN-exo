@@ -3,15 +3,15 @@ title: test version courte
 author: 
 date: 
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: 3
   html_document:
     fig_caption: yes
     number_sections: yes
     toc: yes
     toc_depth: 3
     toc_float: true
+  pdf_document:
+    toc: yes
+    toc_depth: 3
 bibliography: biblio2.bib
 csl: iso690-author-date-fr-no-abstract.csl
 ---
@@ -47,9 +47,13 @@ datatemp <- read.table(link, h=TRUE, sep=";", dec=".", row.names=1, encoding="la
 #dd <- as_tibble(datatemp)
 ```
 
+## **Test**
+
+Blabla
 
 
 ## **Les données**
+
 
 ```{r datatemp1, echo = TRUE,eval=TRUE}
 head(datatemp)
