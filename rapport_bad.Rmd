@@ -84,33 +84,6 @@ boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.
 
  
 
-## **Températures par grandes régions**
-
-Les temperatures des quatres grandes régions sont : 
-
- 
-```{r tempreg, echo = F}
-moyTR<-round(tapply(datatemp$Moye,datatemp$Région,mean),2)
-maxAR<-tapply(datatemp$Ampl,datatemp$Région,max)
-dd<-data.frame(Régions=levels(datatemp$Région),Moyenne=moyTR,AmplitudeM=maxAR)
-```
-
-&nbsp;
-
-\begin{center}Table 1 : Températures par grandes régions.\end{center}  
-Régions          |	Moyennes         | Amplitude maximum 
----------------- | ----------------  | --------------------  
-`r dd$Région[1]` | `r dd$Moyenne[1]` | `r dd$AmplitudeM[1]` 
-`r dd$Région[2]` | `r dd$Moyenne[2]` | `r dd$AmplitudeM[2]` 
-
-
-**Interpretation**: Nous observons que ........................................................................  
-..................................................................................................................
-..................................................................................................................
-..................................................................................................................
-..................................................................................................................
-
-&nbsp;
 
 # **Une première analyse **
 
