@@ -116,7 +116,7 @@ legend(4,0,"Moyennes nationales",bty="n",col="blue",lwd=2,cex=0.7)
 
 &nbsp;
 
-# **Analyse en Composante Principale  ** 
+# **Analyse en Composante Principale**
 
 ## **Rappels**
 
@@ -165,7 +165,7 @@ plot.PCA(res, choix="ind", habillage=17,cex.axis=0.7,cex.lab=0.8)
 
 ## **Conclusions  **
 
-Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture @cook2016climate même si @van2013climate suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
+Les variations mensuelles des température semblent être liées aux différents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture @cook2016climate même si @van2013climate suggère que ces changements pourraient ne pas être aussi marqués que prévu. 
 ...........................................................................
 
 ...........................................................................
