@@ -1,7 +1,0 @@
-knitr::opts_chunk$set(echo = TRUE, fig.pos= "h")
-library(ade4)
-library(FactoMineR)
-library(bookdown)
-library(knitr)
-library(tibble)
-library(factoextra)
