@@ -1,8 +1,8 @@
 ---
 title: Températures dans les villes Françaises - Editions de rapports automatisés avec Rmarkdown.
-author: V. Tolon
-date: 28 avril 2020
-output:
+author: Groupe 3
+date: 29 avril 2020
+output: 
   pdf_document:
     toc: yes
     toc_depth: 3
