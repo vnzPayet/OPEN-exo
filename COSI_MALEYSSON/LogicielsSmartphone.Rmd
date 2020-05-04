@@ -14,13 +14,15 @@ De nos jours, une grande partie des logiciels informatiques ne sont pas libres d
 
 ## I. Pourquoi utiliser des logiciels libres sur smartphone?
 Les logiciels libres sont définit par 4 libertés : 
-- "liberté 0 : la liberté d'exécuter le programme pour tous les usages.
-- liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
+
+ - " liberté 0 : la liberté d'exécuter le programme pour tous les usages
+
+ - liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
 - liberté 2 : la liberté de redistribuer des copies, donc d'aider votre voisin.
 - liberté 3 : la liberté d'améliorer le programme et de publier vos améliorations, pour en faire profiter toute la communauté. Pour ceci l'accès au code source est une condition requise."
 Le problème que pose les logiciels non libre est les sociétés sont en capacité d'espionner ces utilisateurs."
 
-Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. 
+Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs soucieux de reprendre le contrôle de leurs données, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. En effet, les sociétés possédant les logiciels non libres ont la possibilité de faire des changements sur nose logiciels, à distance et sans l'accord de l'utilisateur. De plus, ces mêmes logiciel peuvent avoir accès à tout ce qu'on a autorisé en le téléchargeant : camara, microphone, etc. Or cela est d'une préocuppation majeure : combien d'utilisateurs emportent leur smartphone jusque dans la salle de bain ou leurs toilettes? Le développement et l'utilisation de logiciels libres sur nos smartophne est donc d'une importance capitale.
 
 # II. Les solutions à adopter sur son smartphone
 
