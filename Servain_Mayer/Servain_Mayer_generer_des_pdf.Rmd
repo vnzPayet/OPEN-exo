@@ -1,1 +1,82 @@
-Bonjour, c'est un test
+---
+title: "Générer des pdf"
+author: "Juliette MAYER & Paul SERVAIN"
+date: "04/05/2020"
+output:
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  word_document:
+    toc: yes
+    toc_depth: '3'
+bibliography: RMD to PDF.bib
+---
+# **Installation du package Knitr**
+
+A partir d’un document .rmd (rmarkdown), il est possible de générer (« knit ») des documents HTML, PDF, Word, GitHub markdown, etc…
+Pour cela, nous utilisons le package Knitr.
+Il faut donc s’assurer que le **package Knitr** est bien installé
+
+* Tapez `install.packages("knitr")`
+* Validez cette ligne de code en faisant *Ctrl + Entrée*
+
+La console devrait afficher le message `knitr’ successfully unpacked and MD5 sums checked`
+
+Ainsi nous pouvons générer des documents de différents formats (html, pdf, word, .md, ...)
+
+
+# **Installation du package TinyTeX**
+
+Avant de pouvoir éditer des pdf à partir de R, il est nécessaire d'installer **le package TinyTeX**. La marche à suivre est présentée ci-dessous :
+
+* Ce package s'installe à l'aide de la ligne de code suivante : `tinytex::install_tinytex()`
+Écrivez cette ligne de code dans R : cela signifie que vous allez installer le package Tinytex.
+* Validez cette ligne de code en faisant *Ctrl + Entrée*
+
+L'installation peut alors commencer. Plusieurs messages apparaissent. L'installation peut prendre plusieurs minutes.
+
+* Laissez le package s'installer. Voici ce que vous devez voir à l'écran :
+
+```{r barre, echo=FALSE, out.width = '80%', fig.align = "center",fig.cap="Installation du package TinyTex"}
+knitr::include_graphics("capture1.png")
+```
+
+* Puis le message suivant s'affiche. Cliquez sur "ok" :
+
+```{r clicok, echo=FALSE, out.width = '80%', fig.align = "center",fig.cap="Cliquez sur ok"}
+knitr::include_graphics("capture2.png")
+```
+
+Une fois l’installation terminée, fermez et redémarrez R.
+
+Vous pouvez à présent faire un **"Knit" au format pdf**, en cliquant sur les boutons suivants :
+
+* La flèche à droite du bouton *Knit*
+* *Knit to PDF*
+L'image suivante indique quels sont les boutons mentionnés ci-dessus :
+
+```{r knitpdf, echo=FALSE, out.width = '45%', fig.align = "center",fig.cap="Knit au format PDF"}
+knitr::include_graphics("capture3.png")
+```
+
+Ainsi, vous avez pu générer un document PDF à partir de votre fichier R markdown
+
+
+# **Références**
+
+*Liens* 
+
+<https://www.earthdatascience.org/courses/earth-analytics/document-your-science/knit-rmarkdown-document-to-pdf/>   
+
+<https://statnmap.com/fr/2017-03-11-rmarkdown-conditions-pour-creer-pdf-html-differentes-langues-et-images/>
+
+*Bibliographie*
+

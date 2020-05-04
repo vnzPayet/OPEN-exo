@@ -10,34 +10,156 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
-De nos jours, une grande partie des logiciels informatiques ne sont pas libres de droit. Un logiciel libre est un logiciel dont les codes sont accessibles pour les utilisateurs. Les logiciels libres sont contrôlés directement par ses utilisateurs. A contrario, un logiciel non libre, contrôlé par une société, ne permet pas l'accès aux codes pour les utilisateurs, et ne peux donc pas être modifiés. 
+  
+  De nos jours, une grande partie des logiciels informatiques ne sont pas libres de droit. Un logiciel libre est un logiciel dont les codes sont accessibles pour les utilisateurs. Les logiciels libres sont contrôlés directement par ses utilisateurs. A contrario, un logiciel non libre, contrôlé par une société, ne permet pas l'accès aux codes pour les utilisateurs, et ne peux donc pas être modifiés. 
 
 ## I. Pourquoi utiliser des logiciels libres sur smartphone?
 Les logiciels libres sont définit par 4 libertés : 
-- "liberté 0 : la liberté d'exécuter le programme pour tous les usages.
-- liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
+
+ - liberté 0 : la liberté d'exécuter le programme pour tous les usages
+ - liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
 - liberté 2 : la liberté de redistribuer des copies, donc d'aider votre voisin.
 - liberté 3 : la liberté d'améliorer le programme et de publier vos améliorations, pour en faire profiter toute la communauté. Pour ceci l'accès au code source est une condition requise."
 Le problème que pose les logiciels non libre est les sociétés sont en capacité d'espionner ces utilisateurs."
 
-Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. 
+Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs soucieux de reprendre le contrôle de leurs données, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. En effet, les sociétés possédant les logiciels non libres ont la possibilité de faire des changements sur nose logiciels, à distance et sans l'accord de l'utilisateur. De plus, ces mêmes logiciel peuvent avoir accès à tout ce qu'on a autorisé en le téléchargeant : camara, microphone, etc. Or cela est d'une préocuppation majeure : combien d'utilisateurs emportent leur smartphone jusque dans la salle de bain ou leurs toilettes? Le développement et l'utilisation de logiciels libres sur nos smartophne est donc d'une importance capitale.
 
-## II. Quels logiciels libres utiliser sur son smartphone ?
+# II. Les solutions à adopter sur son smartphone
 
-Il s'agit désormais de donner des pistes pour utiliser des logiciels libres et open source sur l'objet que nous utilisons tous au quotidien : le smartphone. 
+  Il s'agit désormais de donner des pistes pour utiliser des logiciels libres et open source sur l'objet que nous utilisons tous au quotidien : le smartphone. 
 Nous l'utilisons aussi bien à travers les réseaux sociaux, que les recherches internet et l'utilisation d'applications diverses.
 
-### Le surf libre et sécurisé
+## 1. Le surf libre et sécurisé
 
 * **Mozilla firefox**
 
 C'est certainement le navigateur libre le plus connu et disponible sur Android et IOS. 
 Porté par la fondation Mozilla, Firefox propose les mêmes fonctionnalités qu'un navigateur propriétaire : accès aux sites les plus visités en un clin d'oeil, marque-pages, liste de lecture, gestion de nombreux onglets, etc. 
-De plus, Mozilla propose des applications complémentaires comme Firefox Focus qui permet de bloquer les traqueurs de manière permanente et les publicités indésirables ou encore Firefox Lockwise qui permet de garder ses mots de passe Firefox sur différents appareils.
+
+De plus, Mozilla propose des applications complémentaires comme **Firefox Focus** qui permet de bloquer les traqueurs de manière permanente et les publicités indésirables ou encore **Firefox Lockwise** qui permet de garder ses mots de passe Firefox sur différents appareils.
+
+
+* **Brave**
+
+Ce navigateur créé en 2016 par le cofondateur de Mozilla est de plus en plus connu. Il prône la rapidité et la sécurité : il n'y a pas de plugins externes ou de paramètres à configurer. Il permet également de réduire le temps de chargement de pages et accroît la performance. 
+
+
+## 2. La bureautique libre
+
+  Aujourd'hui, nos téléphones nous servent également à ouvrir tous nos fichiers : traitement de texte, calculs, présentation. Il nous ait possible de modifier nos fichiers en cours et même d'en créer de nouveaux et de les partager par mail.
+  Ainsi, sur nos téléphones, il est possible de télécharger **Office 700 Lite** qui regroupe la suite OpenOffice pour mobile. 
+  
+  C'est suite bureautique comprend 5 composantes :
+
+  * **Writer** : éditeur de texte
+  * **Calc** : tableur / feuille de calcul
+  * **Impress** : présentation graphique
+  * **Draw** : dessin
+  * **Math** : éditeur d'équation.
+
+
+  Tout cela, à partir de notre téléphone ! 
+
+
+## 2. Le chat libre
+
+  Les téléphones restent les appareils privilégiés pour le chat : ils sont petits, facilement transportables, il est facile d'ouvrir un message par un glissement de doigt et d'y répondre rapidement. Des applications libres permettent de continuer à discuter n'importe où comme **Conversations**.
+  
+  Cette application permet de créer des conversations à deux ou plus, échanger des photos gratuitement et tout cela sans aucune utilisation ou revente des données. **Chat Secure** ou encore **Delta Chat** jouent également ce rôle.
+
+## 3. La musique et la vidéo librement
+
+  Ecouter de la musique et regarder des vidéos via une application libre est désormais possible avec **VLC for mobile** ! Ce logiciel sur ordinateur est disponible sur IOS et Android et permet à ses utilisateurs de profiter de leurs multimédias via une application libre. 
+
+
+## 4. Voyager de manière libre et sécurisée
+
+  Les applications relatives à nos déplacements sont également devenues essentielles dans nos téléphones. **OsmAnd Voyager et naviguer** est une application cartographique et de navigation avec accès aux données libres OpenStreetMap (OSM) à la couverture mondiale de haute qualité. 
+  Son utilisation hors-ligne est possible, ce qui peut s'avérer très pratique ! Elle permet autant de se déplacer en voiture, qu'à pied ou en vélo. Elle affiche également les arrêts de transport publics. 
+
+On peut cependant noter que cette application n'est pas gratuite : elle coûtera environ 8€/an à son utilisateur.
+
 
 ## Conclusion
 
-Bilblio :
+  Bien qu'aujourd'hui Android ou IOS soient composés de nombreux logiciels libres, les appareils mobiles sont généralement vendus avec plusieurs logiciels propriétaires. Afin de reprendre le contrôle total des données qui passent pas nos téléphones, de nombreux logiciels libres se sont développés. Il en existe aujourd'hui pour pratiquement chaque utilisation et permettent de maîtriser complètement notre téléphone.
+  
+  Ces logiciels semblent avoir de l'avenir avec des utilisateurs souvent de plus en plus méfiants des logiciels propriétaires. 
+  
+  
+  
+**Bilbliographie** :
+@misc{framasoft_framasoft_2019,
+	title = {Framasoft - {Changer} le monde,un octet à la fois},
+	url = {https://framasoft.org/fr/},
+	urldate = {2020-05-04},
+	author = {Framasoft},
+	year = {2019}
+}
 
-https://www.halpanet.org/archives/logiciels-libres-et-proprietaires
-https://framablog.org/2013/10/05/stallman-logiciel-libre/
+@misc{framasoft_framastats_2020,
+	title = {Framastats},
+	url = {https://framastats.org/},
+	urldate = {2020-05-04},
+	author = {Framasoft},
+	month = may,
+	year = {2020},
+	file = {Framastats:/Users/maele/Zotero/storage/NPJWR4PK/framastats.org.html:text/html}
+}
+
+@misc{arte_internet_2019,
+	title = {Internet ou la révolution du partage},
+	url = {https://www.youtube.com/watch?v=nZEoi2LOfVY},
+	abstract = {Film documentaire français réalisé en 2018 par Philippe Borrel et diffusé à la télévision française pour la première fois le 7 mai 2019 sur la chaîne Arte. 
+Le documentaire part à la rencontre de celles et ceux qui, de l'Inde aux États-Unis en passant par l'Europe, expérimentent des outils d'émancipation du logiciel libre pour apporter des solutions concrètes dans une multitude de domaines où les pratiques collectives « non propriétaires » essaiment : dans l'alimentation, avec les semences libres, dans la santé, avec des médicaments open source, ou dans l'éducation, grâce au libre accès à la connaissance.},
+	urldate = {2020-05-04},
+	author = {Arte},
+	year = {2019}
+}
+
+@misc{gautreau_les_2019,
+	title = {Les meilleurs logiciels libres et open source pour tout faire sur votre {PC}},
+	url = {https://www.clubic.com/telecharger/actus-logiciels/article-842984-1-passez-libre-selection-logiciels-libres-open-source.html},
+	abstract = {Le marché informatique est dominé en grande partie par les logiciels propriétaires. Ces derniers sont certes efficaces, mais leur code est jalousement gardé par leurs concepteurs. La solution alternative réside dans les logiciels libres et open sources. Ceux-ci prônent une philosophie axée sur le partage et le soutien de la communauté.},
+	language = {fr},
+	urldate = {2020-05-04},
+	journal = {Clubic.com},
+	author = {Gautreau, Johan},
+	month = oct,
+	year = {2019},
+	note = {Library Catalog: www.clubic.com
+Section: telecharger/actus-logiciels},
+	file = {Snapshot:/Users/maele/Zotero/storage/QGD9VEIM/article-842984-1-passez-libre-selection-logiciels-libres-open-source.html:text/html}
+}
+
+@misc{libreoffice_libreoffice_2020,
+	title = {{LibreOffice} est gratuit : les pré-requis pour l'installation - {LibreOffice}},
+	url = {http://libre-office.fr/staticpages/index.php/libreoffice-pre-requis},
+	urldate = {2020-05-04},
+	author = {LibreOffice},
+	month = may,
+	year = {2020},
+	file = {LibreOffice est gratuit \: les pré-requis pour l'installation - LibreOffice:/Users/maele/Zotero/storage/58TVY9AK/libreoffice-pre-requis.html:text/html}
+}
+
+@misc{halpanet_logiciels_2010,
+	title = {Logiciels libres et propriétaires {\textbar} {Halpanet}},
+	url = {https://www.halpanet.org/archives/logiciels-libres-et-proprietaires},
+	urldate = {2020-05-04},
+	author = {Halpanet},
+	year = {2010},
+	file = {Logiciels libres et propriétaires | Halpanet:/Users/maele/Zotero/storage/VH4R7NKQ/logiciels-libres-et-proprietaires.html:text/html}
+}
+
+@misc{kauffmann_pourquoi_2013,
+	title = {Pourquoi le logiciel libre est plus important que jamais, par {Richard} {Stallman}},
+	url = {https://framablog.org/2013/10/05/stallman-logiciel-libre/},
+	language = {English},
+	urldate = {2020-05-04},
+	journal = {Framablog},
+	author = {Kauffmann, Alexis},
+	month = oct,
+	year = {2013},
+	keywords = {Libres Logiciels},
+	file = {Pourquoi le logiciel libre est plus important que jamais, par Richard Stallman – Framablog:/Users/maele/Zotero/storage/ZL9ZU7NF/stallman-logiciel-libre.html:text/html}
+}
