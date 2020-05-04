@@ -14,14 +14,14 @@ csl: ../iso690-author-date-fr-no-abstract.csl
 
 # Qu'est-ce qu'un logiciel libre?
 
-D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source) : 
+D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source)[@modification__27062015_2018_quest-ce_2015] : 
 
 * liberté d'**exécuter** le logiciels, de le faire fonctionner comme on le souhaite
 * liberté d'**étudier le fonctionnement du programme**, de le **modifier** et **l'adapter** à nos besoins pour cela l'**accès au code source** est un indispensable
 * liberté de **copier et redistribuer** le logiciel
 * liberté de **distribuer des copies modifiées** du logiciel permettant ainsi **d'améliorer** le logiciel et de promouvoir ces modifications.
 
-Open Source Initiative ajoute d'autres principes à ces libertés. Par exemple :
+Open Source Initiative ajoute d'autres principes à ces libertés[@noauthor_open_2020]. Par exemple :
 
 * la **non discrimination** de personne ou de groupe
 * ne pas discriminer les **différents usages** qui pouraient être fait du logiciel, notamment pour permettre l'usage, le développement et la distribution commerciale
@@ -30,26 +30,30 @@ Ces libertées sont garanties par une licence libre.
 
 Les logiciels sont dit libres dans le sens liberté de les modifier, améliorer, de les diffuser… mais pas nécessairement gratuit.
 
-Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités.
+Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités[@framasoft_framasoft_2020].
 
 
 #  Pourquoi choisir un logiciel libre?
 
-Les logiciels libres sont de plus en plus utilisés par la population française et apportent de nombreux bénéfices aux utilisateurs. (https://cnll.fr/news/resultats-enquete-annuelle-2017/)
+Les logiciels libres sont de plus en plus utilisés par la population française et apportent de nombreux bénéfices aux utilisateurs[@noauthor_cnll_2017]. 
 
 ## Les avantages
 
 Les logiciels libres ont de nombreux interêts à être utilisés par rapport aux logiciels propriétaires. Tout d'abord ils sont gratuits ou peu couteux, accessibles à tous et de qualités.
-Ces logiciels ont un grand avantage qui est d'être adaptable. En effet tout utilisateur peut analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, ce qui assure la fiabilité des algorithmes. Il est aussi possible de les modifier et de les adapter pour qu'ils corresponent au mieux à nos besoins. Les logiciels peuvent ainsi être améliorer constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels.(@guely_avantages_nodate)
+Ces logiciels ont un grand avantage qui est d'être adaptable. En effet tout utilisateur peut analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, ce qui assure la fiabilité des algorithmes. Il est aussi possible de les modifier et de les adapter pour qu'ils corresponent au mieux à nos besoins. Les logiciels peuvent ainsi être améliorer constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels.(@guely_avantages_2002)
 Les logiciels libres ont aussi un avantage à ne pas négliger qui est la liberté d'utilisation des données des utilisateurs qui ne sont pas réutilisées ou revendues par les créateurs. Les vies privées des utilisateurs ne sont donc pas impactées, il n'y a aucune prise de contrôle sur nos vies personnelles.
 
 ## Les inconvenients
 
 Le choix d'utilisation d'un logiciel libre a aussi des inconvénients comme devoir se former sur ces logiciels qui sont souvent un peu différents des logiciels propriétaires. De plus il y a souvent peu de support technique ou d'aide à la maintenance, ce qui peut en arrêter quelques uns.
-Le choix du logiciel peut aussi être difficil quand nous nous retrouvons devant des logiciels et des distributeurs qui se ressemblent beaucoup. Souvent les logiciels libres sont moins performants que les propriétaires, et évoluent moins vite. Ces logiciels ont aussi parfois des problèmes d'hebergement, ce coût étant assez élevé. (http://casteyde.christian.free.fr/system/linux/guide/online/x255.html)
+Le choix du logiciel peut aussi être difficile quand nous nous retrouvons devant des logiciels et des distributeurs qui se ressemblent beaucoup. Souvent les logiciels libres sont moins performants que les propriétaires, et évoluent moins vite. Ces logiciels ont aussi parfois des problèmes d'hebergement, ce coût étant assez élevé[@noauthor_avantages_2020]. 
 De plus la configuration des logiciels libre est complexe, ce qui peut être difficile pour un utilisateur non aguerri.
 Enfin certaines licences, comme GPL2 demmande que toute modification du logiciel soit publiée  sous une licence GPL2 (qui est très restricive) car cela permet au logiciel d'être libre et que tout utilisateur ait les améliorations.
 
 # Leviers pour diffuser les logiciels libres
 
+---
+nocite:
+@framasoft_framasoft_2020, @guely_definition_2002, @guely_avantages_2002, @guely_convergence_2002, @noauthor_index_2009, @noauthor_open_2020, @modification__27062015_2018_quest-ce_2015, @noauthor_cnll_2017
+...
 #*Bibliographie*
