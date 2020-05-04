@@ -1,0 +1,15 @@
+---
+title: Générer des .pdf à partir d'un document Rmarkdown (.rmd)
+author: Juliette Meyer & Paul Servain
+date: 04/05/2020
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: true
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+---
