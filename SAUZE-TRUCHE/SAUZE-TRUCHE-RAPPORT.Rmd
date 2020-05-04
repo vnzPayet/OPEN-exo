@@ -3,8 +3,8 @@ author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output:
   pdf_document:
-  toc: yes
-  toc_depth: 3
+    toc: yes
+    toc_depth: 3
 link-citations: yes
 title: "Installation de TinyTex"
 bibliography: biblio.bib
@@ -34,7 +34,7 @@ cat('\\pagebreak')
 
 ## TinyTex
 
-Une bibliothèque logicielle pour compiler et créer facilement des rapport en PDF avec le langage R.
+Une bibliothèque logicielle pour compiler et créer facilement des rapports en PDF avec le langage R.
 
 ## Télécharger TinyTex
 
@@ -54,19 +54,19 @@ tinytex::install_tinytex()
 ```
 
 Patientez, le temps que TinyTex se télécharge et s'installe.
-Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier
+Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier :
 
 ### output: html
 
-vers
+en
 
 ### output: pdf_document
 
-Et faire un knit le plus simplement du monde.
+Et faire un knit, le plus simplement du monde.
 
 ## Utiliser TinyTex
 
-TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réaliser des export PDF. Il va convertir le code ".Rmd" en \LaTeX, avant de l'exporter en PDF. 
+TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réaliser des exports PDF. Il va convertir le code ".Rmd" en \LaTeX, avant de l'exporter en PDF. 
 
 Pour rappel, \LaTeX est un langage de composition de documents, qui peut se résumer de cette manière :
 
@@ -78,13 +78,11 @@ Pour rappel, \LaTeX est un langage de composition de documents, qui peut se rés
 cat('\\pagebreak')
 ```
 
-# References
+# Références
 
 ## *Liens*
 
 <https://yihui.org/tinytex/>
-
-&nbsp;
 
 ## *Bibliographie*
 
