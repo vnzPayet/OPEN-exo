@@ -12,9 +12,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(bookdown)
 library(knitr)
-library(tibble)
 library(tinytex)
 ```
 
@@ -46,12 +44,84 @@ Créer un fichier Rmarkdown est très simple, il suffit de cliquer sur l'onglet 
 Une fenètre va ensuite s'ouvrir, vous pourrez choisir le type de document R markdown que vous voulez créer (document, présentation, application Shiny, un document à partir d'un example) et ajouter le nom du fichier, l'auteur et le type de document final que vous souhaitez (html, pdf, word).
 Après avoir rempli ces différentes informations en choisissant de créer un document, vous aurrez un text par défaut en anglais vous expliquant rapidement ce qu'est un document R Markdown.
 
-Le début du script ou son en tête  est encadré par trois tirets, comme le montre cette image.
-```{r , echo=FALSE, out.width = '50%', fig.align = "center"}
-knitr::include_graphics("Titre.png")
+## Les fonctionnalités de R Markdown:
+
+### L'en tête
+
+Le début du script ou son en tête  est encadré par trois tirets, comme ci-après.
+```{r, echo = T,eval=F}
+---
+title: "Utiliser Rmarkdown"
+author: "C. Laroche"
+date: "04/05/2020"
+output: html_document
+---
 ```
 On remarque que cette partie contient en faite les métadonnées du fichier (tire, auteur, date, format final du document). C'est ici que l'on pourra modifier la forme global du document, en ajoutant par exemple une table des matières dont on peut choisir le format.
-Pour ajouter une table des matière il suffit de rajouter 'toc: yes' à la ligne du format de sortie, comme ci-après:
-```{r , echo=FALSE, out.width = '50%', fig.align = "center"}
-knitr::include_graphics("Titre2.png")
+Pour ajouter une table des matière il suffit de rajouter `toc: yes` à la ligne avec une tabulation de plus du format de sortie, comme ci-après:
+```{r, echo = T,eval=F}
+output: 
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
 ```
+
+La table des matières ou table of content (toc) en anglais, peut être modifié à votre convenance, de nombreuses fonctionnalité existe, comme `toc_depth` qui permet de choisir à quel niveau la table des matières doit s'arrêter, ici on va jusqu'au troisième titre, `toc_float` ne peut être utilisé que sous un format html car cela permet d'avoir un menu déroulant.
+
+Comme R est un language de programmation, il est très important de respecter tout les espaces et saut de lignes pour que le code foncionne.
+
+### La partie texte du document
+
+On différencie le texte du code R sur Rstudio par son fond blanc, contre in fond grisé pour le code. Cette partie peut-être mise en page avec des titres, des tirets, des mises en forme pour le texte ou les formules.
+Etudions quelques examples de fonctionnalité:
+
+Pour écrire en italique il faut mettre * dechaque côté du texte: *italique*
+Pour écrire en gras il faut mettre ** dechaque côté du texte: **gras** 
+Pour écrire en gras et en italique il faut mettre *** dechaque côté du texte: ***les deux*** 
+
+`code au sein d'un texte` ajouter ``de chaque côté 
+
+`$A = \pi*r^{2}$` = $A = \pi*r^{2}$
+`$$E = mc^{2}$$` = $$E = mc^{2}$$
+
+'# Header1' =
+# Header1
+## Header 2 
+### Header 3 
+#### Header 4
+##### Header 5
+###### Header 6
+<!--comentaire de texte-->
+<http://www.rstudio.com>
+[link](www.rstudio.com)
+Jump to [Header 1](#anchor)
+
+* unordered list
++ sub-item 1
++ sub-item 2
+- sub-sub-item 1
+* item 2
+Continued (indent 4 spaces)
+1. ordered list
+2. item 2
+i) sub-item 1
+A. sub-sub-item 1
+(@) A list whose numbering
+continues after
+(@) an interruption
+Term 1
+: Definition 1
+
+- slide bullet 1
+- slide bullet 2
+(>- to have bullets appear on click)
+horizontal rule/slide break:
+***
+A footnote [^1]
+[^1]: Here is the footnote.
+
+
+### La partie code R du document
+
