@@ -1,0 +1,28 @@
+---
+title: "Qu'est-ce qu'un logiciel libre ?"
+author: "Thomas BARRANDE"
+date: "04/05/2020"
+output: pdf_document
+bibliography: BiblioThomas.bib
+csl: iso690-author-date-fr-no-abstract.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## *Qu'est-ce qu'un logiciel libre*
+
+Les logiciels libres sont souvent gratuits. Mais les logiciels gratuits ne sont pas toujours libres. Et malgré la gratuité, tout le monde n'utilise pas ces logiciels et certaines entreprises vivent de la vente de ces logiciels et des services associés.[@jullien_quest_2014]
+
+Un logiciel libre est un logiciel qui est distribué selon une licence libre. Précisément, ce sont les licences libres qui définissent les logiciels comme tels.
+
+Plus concrètement et de manière un peu simplifiée, cela se matérialise par le fait qu'un logiciel libre est un logiciel qui peut être utilisé, modifié et redistribué sans restriction par la personne à qui il a été distribué. Un tel logiciel est ainsi susceptible d'être soumis à étude, critique et correction. Cette caractéristique confère aux logiciels libres une certaine fiabilité et réactivité.
+
+Mozilla Firefox, Mozilla Thunderbird, OpenOffice.org et VLC sont des exemples de logiciels libres célèbres.
+[@association_francophone_des_utilisateurs_de_logiciels_libres_quest-ce_2015]
+
+&nbsp;
+
+## ***Bibliographie :***
+
