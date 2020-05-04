@@ -1,0 +1,77 @@
+---
+title: 'Compilation de données : R Markdown & GitHub' #titre qui s'affichera en haut du fichier
+author: 'G2 : L.ARSAC, Z.FROMENT, C.LAROCHE, P.SERVAIN, A.FALIGOT-GIRARDELLI, J.MAYER'
+date: "29/04/20"
+output: 
+  pdf_document:
+    fig_caption: yes #gestions génération PDF : titre graphiques et figures
+    includes:  
+      in_header: my_header.tex #gestions génération PDF : permet le maintien de la bonne position des graphs/tableaux
+    number_sections: yes #gestions génération PDF : numéro des titres et parties
+    toc: yes
+    toc_depth: 3
+  html_document: 
+    fig_caption: yes #gestions génération HTML : titre graphiques et figures
+    number_sections: yes #gestions génération HTML : numéro des titres et parties
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  word_document:
+    fig_caption: yes #gestions génération WORD : titre graphiques et figures
+    number_sections: yes #gestions génération WORD : numéro des titres et parties
+    toc: yes
+    toc_depth: 3 '3' #format glissant de la toc
+csl: iso690-author-date-fr-no-abstract.csl #le nom du style pour la biblio, doit être dans le même dossier
+bibliography: biblio2.bib #le fichier de biblio, on peut le créer avec Zotero, doit être dans le même dossier
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(echo = TRUE) 
+#ajouter toute les library nécessaires
+library(ade4)
+library(FactoMineR)
+library(bookdown)
+library(knitr)
+library(tibble)
+library(tinytex)
+```
+
+```{r logo, echo=FALSE, out.width = '30%', fig.align = "center",fig.cap="Logo Rmarkdown"}
+knitr::include_graphics("rmarkdown.png") #afficher l'image de markdown, doit être dans le même dossier
+```
+
+
+**Résumé** : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
+..................................................................................................................
+..................................................................................................................
+
+# **Présentation des données **
+
+```{r child='G2_PresentationDonnees.Rmd'} 
+#appel du fichier G2_PresentationDonnees.Rmd et de ses données, il doit être ouvert et dans le même dossier
+#les library utilisées dans le fichier source (Multifichier) sont aussi utilisées dans les fichiers child
+```
+
+# **Une première analyse **
+
+```{r child='G2_PremiereAnalyse.Rmd'}
+#appel du fichier G2_PremiereAnalyse.Rmd et de ses données, il doit être ouvert et dans le même dossier
+#les library utilisées dans le fichier source (Multifichier) sont aussi utilisées dans les fichiers child
+```
+
+# **Analyse en Composante Principale**
+
+```{r child='G2_ACP.Rmd'}
+#appel du fichier G2_ACP.Rmd et de ses données, il doit être ouvert et dans le même dossier
+#les library utilisées dans le fichier source (Multifichier) sont aussi utilisées dans les fichiers child
+```
+
+# **Références**
+
+```{r child='G2_Ref.Rmd'}
+#appel du fichier G2_Ref.Rmd et de ses données, il doit être ouvert et dans le même dossier
+#les library utilisées dans le fichier source (Multifichier) sont aussi utilisées dans les fichiers child
+```
+
+
+

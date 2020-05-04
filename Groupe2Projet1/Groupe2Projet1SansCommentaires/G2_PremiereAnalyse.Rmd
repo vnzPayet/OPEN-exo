@@ -1,0 +1,48 @@
+```{r,echo=FALSE}
+#Une première analyse
+```
+
+
+Nous réalisons des graphiques permettant d’analyser, par région :
+
+* La position globale de la températures vis à vis de la moyenne nationale.
+* L’évolution mensuelle des températures dont notament :
+  * L’amplitude
+  * L’hétérogénéité inter-villes.
+  
+## **Création d'une fonction graphique**
+
+Nous souhaitons produire un graphique representant par région les courbes mensuelles de chaque ville avec la courbe moyenne nationale. Voici un script possible : 
+  
+```{r functemp, echo =T, eval=T}
+Tplot<-function(tempr,tmean) {
+  plot(c(1,12),c(-10,30),type="n",ylab="Temperature (°C)",xlab="Mois",cex.lab=0.8,cex.axis=0.8)
+  apply(tempr[,1:12],1,function(x) lines(1:12,x))
+  text(2,28,tempr$Région[1],cex=0.8)
+  lines(1:12,tmean,lwd=2,col="red")
+}
+```
+
+## **Application**
+
+
+```{r graphtemp, echo = T,eval=T,fig.height = 4,fig.align = "center", fig.width = 4,fig.cap="Courbes de températures mensuelles par régions"}
+#température moyenne
+tmean<-apply(datatemp[,1:12],2,mean)
+#Découpage du tableau par région
+sptemp<-split(datatemp,datatemp$Région)
+#Découpage de la fenêtre graphique
+par(mfrow=c(2,2),mar=c(3,3,1,1),mgp=c(2,1,0))
+#Application de la fonction
+plot<-lapply(sptemp,Tplot,tmean)
+#Légende
+legend(2,0,"Moyenne Régions",bty="n",col="red",lwd=2,cex=0.7)
+```
+
+
+**Interpretation**: Nous observons que ..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
