@@ -1,10 +1,12 @@
 ---
-title: "Installation de TinyTex"
+pdf_document:
+  toc: yes
+  toc_depth: 3
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output: pdf_document
-bibliography: biblio.bib
-
+title: "Installation de TinyTex"
+df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -15,39 +17,48 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Une bibliothèque logicielle pour compiler et créer facilement des rapport en PDF avec le langage R.
 
-Pour plus d'informations, vous pouvez visiter le site https://yihui.org/tinytex/
-
-## Logo 
-
-```{r logo, echo=FALSE, out.width = '10%', fig.align = "center",fig.cap="Logo Rmarkdown"}
-knitr::include_graphics("logo-tinytex.png")
-```
-
 ## Télécharger TinyTex
 
 Dans la console de RStudio (en bas à gauche)
 
-### install.packages("tinytex")
-
+```
+install.packages("tinytex")
+```
 Ceci téléchargera automatiquement TinyTex sur votre machine en s'adaptant à l'OS.
 
 ## Installer TinyTex
 
 Il y a une petite subtilité : la commande précédente ne fait qu'installer un installateur qui doit encore être exécuté. Ce qui se fait avec la commande suivante :
 
-### tinytex::install_tinytex()
+```
+tinytex::install_tinytex()
+```
 
 Patientez, le temps que TinyTex se télécharge et s'installe.
 Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier
 
 ### output: html
-
-en
-
+vers
 ### output: pdf_document
 
 Et faire un knit le plus simplement du monde.
 
-##Références
+## Utiliser TinyTex
+
+TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réaliser des export PDF. Il va convertir le code ".Rmd" en \LaTeX, avant de l'exporter en PDF. 
+
+Pour rappel, \LaTeX est un langage de composition de documents, qui peut se résumer de cette manière :
+
+```
+Ecrivez l'essentiel, on se charge de la mise en page"
+```
+
+# *Références*
+
+*Liens*
+
+https://yihui.org/tinytex/
+
+
 
 *Bibliographie* 

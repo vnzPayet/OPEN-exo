@@ -1,0 +1,16 @@
+---
+title: "La démocratisation des logiciels libres"
+author: "Dylan Clair, Anne-Laure Girard et Salomé Hamard"
+date: "04/05/2020"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: biblio.bib
+csl: ../iso690-author-date-fr-no-abstract.csl
+---
+
+Bla bla bla @framasoft_framasoft_nodate
+
+
+*Bibliographie*
+
