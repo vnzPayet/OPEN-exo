@@ -34,7 +34,7 @@ cat('\\pagebreak')
 
 ## TinyTex
 
-Une bibliothèque logicielle pour compiler et créer facilement des rapport en PDF avec le langage R.
+Une bibliothèque logicielle pour compiler et créer facilement des rapports en PDF avec le langage R.TinyTex est donc une distribution LaTex personnalisée.
 
 ## Télécharger TinyTex
 
