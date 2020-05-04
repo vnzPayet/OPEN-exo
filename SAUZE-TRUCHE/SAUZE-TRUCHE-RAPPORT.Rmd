@@ -7,7 +7,7 @@ date: "04/05/2020"
 output: pdf_document
 title: "Installation de TinyTex"
 df_print: paged
-bibliography: Bibliographie SAUZE - TRUCHE.bib
+bibliography: BibliographieSAUZE-TRUCHE.bib
 iso690-author-date-fr-no-abstract.csl
 
 
