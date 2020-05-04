@@ -22,18 +22,61 @@ Le problème que pose les logiciels non libre est les sociétés sont en capacit
 
 Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. 
 
-## II. Quels logiciels libres utiliser sur son smartphone ?
+# II. Les solutions à adopter sur son smartphone
 
-Il s'agit désormais de donner des pistes pour utiliser des logiciels libres et open source sur l'objet que nous utilisons tous au quotidien : le smartphone. 
+  Il s'agit désormais de donner des pistes pour utiliser des logiciels libres et open source sur l'objet que nous utilisons tous au quotidien : le smartphone. 
 Nous l'utilisons aussi bien à travers les réseaux sociaux, que les recherches internet et l'utilisation d'applications diverses.
 
-### Le surf libre et sécurisé
+## 1. Le surf libre et sécurisé
 
 * **Mozilla firefox**
 
 C'est certainement le navigateur libre le plus connu et disponible sur Android et IOS. 
 Porté par la fondation Mozilla, Firefox propose les mêmes fonctionnalités qu'un navigateur propriétaire : accès aux sites les plus visités en un clin d'oeil, marque-pages, liste de lecture, gestion de nombreux onglets, etc. 
-De plus, Mozilla propose des applications complémentaires comme Firefox Focus qui permet de bloquer les traqueurs de manière permanente et les publicités indésirables ou encore Firefox Lockwise qui permet de garder ses mots de passe Firefox sur différents appareils.
+
+De plus, Mozilla propose des applications complémentaires comme **Firefox Focus** qui permet de bloquer les traqueurs de manière permanente et les publicités indésirables ou encore **Firefox Lockwise** qui permet de garder ses mots de passe Firefox sur différents appareils.
+
+
+* **Brave**
+
+Ce navigateur créé en 2016 par le cofondateur de Mozilla est de plus en plus connu. Il prône la rapidité et la sécurité : il n'y a pas de plugins externes ou de paramètres à configurer. Il permet également de réduire le temps de chargement de pages et accroît la performance. 
+
+
+## 2. La bureautique libre
+
+  Aujourd'hui, nos téléphones nous servent également à ouvrir tous nos fichiers : traitement de texte, calculs, présentation. Il nous ait possible de modifier nos fichiers en cours et même d'en créer de nouveaux et de les partager par mail.
+  Ainsi, sur nos téléphones, il est possible de télécharger **Office 700 Lite** qui regroupe la suite OpenOffice pour mobile. 
+  
+  C'est suite bureautique comprend 5 composantes :
+
+  * **Writer** : éditeur de texte
+  * **Calc** : tableur / feuille de calcul
+  * **Impress** : présentation graphique
+  * **Draw** : dessin
+  * **Math** : éditeur d'équation.
+
+
+  Tout cela, à partir de notre téléphone ! 
+
+
+## 2. Le chat libre
+
+  Les téléphones restent les appareils privilégiés pour le chat : ils sont petits, facilement transportables, il est facile d'ouvrir un message par un glissement de doigt et d'y répondre rapidement. Des applications libres permettent de continuer à discuter n'importe où comme **Conversations**.
+  
+  Cette application permet de créer des conversations à deux ou plus, échanger des photos gratuitement et tout cela sans aucune utilisation ou revente des données. **Chat Secure** ou encore **Delta Chat** jouent également ce rôle.
+
+## 3. La musique et la vidéo librement
+
+  Ecouter de la musique et regarder des vidéos via une application libre est désormais possible avec **VLC for mobile** ! Ce logiciel sur ordinateur est disponible sur IOS et Android et permet à ses utilisateurs de profiter de leurs multimédias via une application libre. 
+
+
+## 4. Voyager de manière libre et sécurisée
+
+  Les applications relatives à nos déplacements sont également devenues essentielles dans nos téléphones. **OsmAnd Voyager et naviguer** est une application cartographique et de navigation avec accès aux données libres OpenStreetMap (OSM) à la couverture mondiale de haute qualité. 
+  Son utilisation hors-ligne est possible, ce qui peut s'avérer très pratique ! Elle permet autant de se déplacer en voiture, qu'à pied ou en vélo. Elle affiche également les arrêts de transport publics. 
+
+On peut cependant noter que cette application n'est pas gratuite : elle coûtera environ 8€/an à son utilisateur.
+
 
 ## Conclusion
 
