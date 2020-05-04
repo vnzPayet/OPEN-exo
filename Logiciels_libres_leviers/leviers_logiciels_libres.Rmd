@@ -1,9 +1,24 @@
 ---
-title: "La démocrtatisation des logiciels libres"
-author: "Dyla Clair et Salomé Hamard"
-date: "5/4/2020"
+title: "La démocratisation des logiciels libres"
+author: "Dylan Clair, Salomé Hamard et Anne-Laure Girard"
+date: "04/05/2020"
 output:
   pdf_document: default
   html_document: default
+  toc : true 
+  toc_depth: 2
+  theme : united
 ---
 
+# Qu'est-ce qu'un logiciel libre?
+
+A-L
+
+# Avantages et inconvenients
+
+## Avantages
+
+
+## Inconvenients
+
+# Leviers pour diffuser les logiciels libres
