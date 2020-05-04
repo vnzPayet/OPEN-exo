@@ -74,6 +74,11 @@ Afin d’aider les participants au projet pilote ORD, un modèle de plan de gest
 
 Afin d’aider la communauté scientifique française dans ses démarches un outil collaboratif est mis à disposition par l’Inist-CNRS : DMP OPIDoR (Data Management Plan pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche). Cet outil est basé sur le code open source DMPRoadmap. Des instituts peuvent ajouter leur propre PGD comme c’est le cas de l’INRA (Doranum, 2018). DMP OPIDoR permet de partager le PGD avec des collaborateurs et offre des sauvegardes automatiques sur un serveur en France. Toutefois, pour avoir toutes les versions du PGD il est fortement recommandé de l’exporter (Filatre, Hensens, 2017).
 
+```{r logo, echo=FALSE, out.width = '100%', fig.align = "center",fig.cap="Marche à suivre en terme de plan de gestion des données dans le cadre d'une participation au pilote ORD. A. Cartier, M. Moysan, N. Reymonet, d’après les Guidelines on FAIR data management."}
+knitr::include_graphics("image.png")
+```
+
+
 ## 2. Documenter et organiser les données
 
 Cette partie est très importante, que ce soit pour l’auteur ou l’utilisateur des données. En effet une bonne gestion des règles de nommage, d’organisation et de renseignements des métadonnées permet de gagner en intelligibilité et d’accroître largement le potentiel de réutilisation des données.
