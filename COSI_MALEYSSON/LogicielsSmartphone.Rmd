@@ -1,0 +1,43 @@
+---
+title: "Les logiciels libres sur smartphone"
+author: "Maële Maleysson et Orianne Cosi"
+date: "5/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+De nos jours, une grande partie des logiciels informatiques ne sont pas libres de droit. Un logiciel libre est un logiciel dont les codes sont accessibles pour les utilisateurs. Les logiciels libres sont contrôlés directement par ses utilisateurs. A contrario, un logiciel non libre, contrôlé par une société, ne permet pas l'accès aux codes pour les utilisateurs, et ne peux donc pas être modifiés. 
+
+## I. Pourquoi utiliser des logiciels libres sur smartphone?
+Les logiciels libres sont définit par 4 libertés : 
+- "liberté 0 : la liberté d'exécuter le programme pour tous les usages.
+- liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
+- liberté 2 : la liberté de redistribuer des copies, donc d'aider votre voisin.
+- liberté 3 : la liberté d'améliorer le programme et de publier vos améliorations, pour en faire profiter toute la communauté. Pour ceci l'accès au code source est une condition requise."
+Le problème que pose les logiciels non libre est les sociétés sont en capacité d'espionner ces utilisateurs."
+
+Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. 
+
+## II. Quels logiciels libres utiliser sur son smartphone ?
+
+Il s'agit désormais de donner des pistes pour utiliser des logiciels libres et open source sur l'objet que nous utilisons tous au quotidien : le smartphone. 
+Nous l'utilisons aussi bien à travers les réseaux sociaux, que les recherches internet et l'utilisation d'applications diverses.
+
+### Le surf libre et sécurisé
+
+* **Mozilla firefox**
+
+C'est certainement le navigateur libre le plus connu et disponible sur Android et IOS. 
+Porté par la fondation Mozilla, Firefox propose les mêmes fonctionnalités qu'un navigateur propriétaire : accès aux sites les plus visités en un clin d'oeil, marque-pages, liste de lecture, gestion de nombreux onglets, etc. 
+De plus, Mozilla propose des applications complémentaires comme Firefox Focus qui permet de bloquer les traqueurs de manière permanente et les publicités indésirables ou encore Firefox Lockwise qui permet de garder ses mots de passe Firefox sur différents appareils.
+
+## Conclusion
+
+Bilblio :
+
+https://www.halpanet.org/archives/logiciels-libres-et-proprietaires
+https://framablog.org/2013/10/05/stallman-logiciel-libre/
