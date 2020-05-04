@@ -5,12 +5,12 @@
 Les données sont téléchargeables directement sur [ce site](https://husson.github.io/data.html) ou peuvent être importée directement sous R avec : 
  
 ```{r datatemp, echo = TRUE}
-link <- "http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv" #récupération du tableur
-datatemp <- read.table(link, h=TRUE, sep=";", dec=".", row.names=1, encoding="latin1") #incrémentation/lecture tableur
-datatibble <- as_tibble(datatemp) #tibble du tableur OU utilisation de knitr::kable
+link <- "http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv"
+datatemp <- read.table(link, h=TRUE, sep=";", dec=".", row.names=1, encoding="latin1")
+datatibble <- as_tibble(datatemp)
 #knitrboxplot<- knitr::kable(head(datatemp), caption = " Température mensuelle par mois et par villes")
-knitTab1 <- knitr::kable(datatemp[,1:12], caption="Moyennes de T°C par ville par mois",align = "c") #séparation moyennes
-knitTab2 <- knitr::kable(datatemp[,13:17], caption="Informations sur les villes",align = "c") #séparation infos
+knitTab1 <- knitr::kable(datatemp[,1:12], caption="Moyennes de T°C par ville par mois",align = "c")
+knitTab2 <- knitr::kable(datatemp[,13:17], caption="Informations sur les villes",align = "c")
 ```
 
 
@@ -20,14 +20,14 @@ knitTab2 <- knitr::kable(datatemp[,13:17], caption="Informations sur les villes"
 ```{r datatemp1, echo = FALSE,eval=TRUE}
 #head(datatemp)
 #datatibble
-knitTab1 #affichage des 2 tableaux, en centré
+knitTab1
 knitTab2
 ```
 
 ```{r datatemp2, echo = FALSE,eval=TRUE}
-temp<-unlist(datatemp[,1:12]) #utilisation du tableau non travaillé pour récupérer des données
-villes<-factor(rep(row.names(datatemp),12)) #récupérer les villes comme facteur
-med<-tapply(temp,villes,mean) #calculer la moyenne de température (variable temp) par ville (factor villes)
+temp<-unlist(datatemp[,1:12])
+villes<-factor(rep(row.names(datatemp),12))
+med<-tapply(temp,villes,mean)
 ```
 
 ## **Représentation des données en graphique**
@@ -36,7 +36,6 @@ Le jeu de donné est complété pour `r nrow(datatemp)` villes et contient  `r n
  
 ```{r datatempville, echo = F, eval=T, fig.height = 5, , fig.align = "center", fig.width = 6, fig.align = "center", fig.cap="\\label{tempvilles}Températures par villes"} 
 #fig.cap="Températures par villes\\label{fig:tempvilles}"}
-#Cela permet de mieux gérer l'appel de la figure
 villes2<-factor(villes,levels(villes)[order(med)])
-boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7, xlab = "Villes") #faire un boxplot contenant les températures selon les villes avec moyenne, les Q1 et Q3 et étendue.
+boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7, xlab = "Villes")
 ```
