@@ -14,6 +14,24 @@ csl: ../iso690-author-date-fr-no-abstract.csl
 
 # Qu'est-ce qu'un logiciel libre?
 
+D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source) : 
+
+* liberté d'**exécuter** le logiciels, de le faire fonctionner comme on le souhaite
+* liberté d'**étudier le fonctionnement du programme**, de le **modifier** et **l'adapter** à nos besoins pour cela l'**accès au code source** est un indispensable
+* liberté de **copier et redistribuer** le logiciel
+* liberté de **distribuer des copies modifiées** du logiciel permettant ainsi **d'améliorer** le logiciel et de promouvoir ces modifications.
+
+Open Source Initiative ajoute d'autres principes à ces libertés. Par exemple :
+
+* la **non discrimination** de personne ou de groupe
+* ne pas discriminer les **différents usages** qui pouraient être fait du logiciel, notamment pour permettre l'usage, le développement et la distribution commerciale
+
+Ces libertées sont garanties par une licence libre.
+
+Les logiciels sont dit libres dans le sens liberté de les modifier, améliorer, de les diffuser… mais pas nécessairement gratuit.
+
+Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités.
+
 A-L Bla bla bla @framasoft_framasoft_nodate
 
 # Avantages et inconvenients
