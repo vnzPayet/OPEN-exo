@@ -1,6 +1,12 @@
 ---
 title: "Gestion de données scientifiques"
+author: Céline Jacqueton, Eloïse Giroud
+date: 04/05/2020
 output: pdf_document
+fig_caption: yes
+number_sections: yes
+toc: yes
+toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -68,7 +74,7 @@ Un plan de gestion des données est un document formel et évolutif qui décrit 
 
 Dans le cadre d’un projet financé par H2020, tout scientifique doit participer à l’action pilote ORD : « Open Research Data » soit en français « libre accès aux données issues de la recherche » sauf exception si les données ne peuvent être partagées pour des raisons de sécurité ou autre. Dans ce cas, ce choix devra être motivé. Toutefois, il est possible de participer au pilote ORD (voir même vivement conseillé) bien que la totalité des données ne soit pas rendue accessible. Le principe de l’ORD concernant l’accessibilité des données est « as open as possible, as closed as necessary ». 
 
-Tout participant à l’action pilote ORD doit obligatoirement fournir un PGD à la commission européenne dans les 6 mois qui suivent le commencement du projet. Il est également recommandé de soumettre à titre volontaire un plan de gestion des données pour les projets se désengageant du pilote. Une nouvelle version du DMP est nécessaire en cas de modifications significatives du projet tel que l’acquisition de nouvelles données, la déposition d’une demande de brevet, des arrivées ou départs de membres,… Dans le cas d’une évaluation périodique, le PGD mis à jour doit-être fournit. Dans tous les cas, un examen final à lieu où la version finale du PGD doit être soumise (EUROPEAN COMMISSION - Directorate-General for Research & Innovation, 2016) (Figure 9).
+Tout participant à l’action pilote ORD doit obligatoirement fournir un PGD à la commission européenne dans les 6 mois qui suivent le commencement du projet. Il est également recommandé de soumettre à titre volontaire un plan de gestion des données pour les projets se désengageant du pilote. Une nouvelle version du DMP est nécessaire en cas de modifications significatives du projet tel que l’acquisition de nouvelles données, la déposition d’une demande de brevet, des arrivées ou départs de membres,… Dans le cas d’une évaluation périodique, le PGD mis à jour doit-être fournit. Dans tous les cas, un examen final à lieu où la version finale du PGD doit être soumise (EUROPEANCOMMISSION, Directorate-General for Research & Innovation, 2016).
 
 Afin d’aider les participants au projet pilote ORD, un modèle de plan de gestion de données applicable à tout projet H2020 est proposé par la commission européenne. Ce modèle est basé sur les principes FAIR et comporte 6 parties composées chacune d’une série de questions. Un résumé synthétique du modèle est disponible en annexe 2. Un seul DMP doit être réalisé par projet même si celui-ci contient plusieurs jeux de données. Néanmoins tous les jeux de données doivent apparaître dans le PGD. 
 
@@ -86,11 +92,11 @@ Cette partie est très importante, que ce soit pour l’auteur ou l’utilisateu
 ###   Nommage et organisation des fichiers et dossiers
 
 Le nommage et l’organisation des fichiers (ou dossiers) de données permettent un gain de temps considérable, que ce soit pour l’auteur pendant le projet qui peut plus facilement localiser et distinguer les fichiers que pour l’utilisateur lorsqu’il veut réutiliser les données. Une organisation structurée et un nommage clair permettent donc de faciliter le partage des jeux de données.
-En outre, cela permet également de réduire les risques de suppression ou de déplacements malencontreux et donc de préserver l’intégrité des données (Pôle Données de la Recherche IST, 2016).
+En outre, cela permet également de réduire les risques de suppression ou de déplacements malencontreux et donc de préserver l’intégrité des données (Pole_Donnees_de_la_Recherche IST, 2016).
 
 Concernant le nommage, il est tout d’abord conseillé de choisir une convention de nommage adaptée aux fichiers et aux contenus. Cette convention doit être appliquée pour tous les fichiers et toujours de la même façon. Il est préférable d’écrire cette convention quelque part afin de pouvoir s’y référer lors du nommage de nouveaux fichiers ou pour mieux (re)comprendre les titres des fichiers nommés ultérieurement.
 Quelques règles de bases :  
--	Le nom de fichier doit être court : l’INRA recommande au maximum 25 caractères (Pôle Données de la Recherche IST, 2018c). Les noms de fichiers peuvent inclure des abréviations, dans ce cas il est préférable de choisir des abréviations usuelles telles que par exemple AP pour Avant-Projet, CR pour Compte Rendu, VP pour Version Provisoire, VF pour Version Finale,... Il est aussi possible et conseillé d’y faire figurer les initiales du chercheur ainsi que le numéro de version ou encore la date. Attention cependant à ce dernier point, les dates doivent avoir un format consistant de type AAAA-MM-JJ selon la norme ISO 8601 (Unil, 2016). Les fichiers doivent être identifiables par leurs noms même en cas de changement du lieu de stockage.  
+-	Le nom de fichier doit être court : l’INRA recommande au maximum 25 caractères (Pole_Donnees_de_la_Recherche_IST, 2018c). Les noms de fichiers peuvent inclure des abréviations, dans ce cas il est préférable de choisir des abréviations usuelles telles que par exemple AP pour Avant-Projet, CR pour Compte Rendu, VP pour Version Provisoire, VF pour Version Finale,... Il est aussi possible et conseillé d’y faire figurer les initiales du chercheur ainsi que le numéro de version ou encore la date. Attention cependant à ce dernier point, les dates doivent avoir un format consistant de type AAAA-MM-JJ selon la norme ISO 8601 (Unil, 2016). Les fichiers doivent être identifiables par leurs noms même en cas de changement du lieu de stockage.  
 -	Il est impératif d’éviter les caractères spéciaux ainsi que les accents, les cédilles ou encore les espaces. Ces derniers peuvent être remplacés par des underscores ou encore des tirets (Unil, 2016). Attentions certaines applications ne font pas la différence entre majuscules et minuscules donc supprimer les espaces en les remplaçant par des majuscules en début de mot n’est pas toujours pertinent (Pôle Données de la Recherche IST, 2018c).  
 -	Dans le cas d’une numérotation il est préférable d’utiliser des zéros devant le numéro. Par exemple il vaut mieux écrire 001, 010, 100 plutôt que 1, 10, 100. Cette règle permettra d’assurer le bon ordre leur dans leur affichage (Unil, 2016).  
 -	Il est également conseillé de ne pas garder toutes les versions intermédiaires d’un même fichier afin d’éviter les confusions.
@@ -134,17 +140,5 @@ Au sein de ces schémas les métadonnées peuvent être décrites à l’aide de
 Dans le cadre du projet H2020, il est obligatoire de « faire référence à un système standard d’identification », (COMMISSION EUROPÉENNE - Direction Générale de la Recherche et de l’Innovation, 2016).  
 On utilise donc un identifiant pérenne (PID) afin d’identifier ses données ou même plus largement les contributeurs et auteurs du jeu de données. Le PID sont des identifiants uniques et pérennes permettant d’associer chaque jeu de données à une ressource ou entité. Ce sont en quelques sortes les équivalents des URL dans le web. Toutefois, les URL ne sont pas des identifiants stables contrairement aux PID car la ressource n’est plus accessible dès lors qu’elle est déplacée ou renommée. La gestion active des PID par des infrastructures humaines et techniques permet d’éviter ce problème. Il existe deux types d’identifiants pérennes : objets et contributeurs.
 
+# References
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
