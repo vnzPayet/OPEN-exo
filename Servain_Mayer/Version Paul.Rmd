@@ -13,7 +13,7 @@ output:
     toc_depth: 3
     toc_float: true
 csl: iso690-author-date-fr-no-abstract.csl
-bibliography: biblio2.bib
+bibliography: RMD to PDF.bib
 ---
 
 
@@ -52,8 +52,9 @@ knitr::include_graphics("icone knitJPG.JPG")
 
 *Liens* 
 
-http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv   
+<https://www.earthdatascience.org/courses/earth-analytics/document-your-science/knit-rmarkdown-document-to-pdf/>   
 
-<https://husson.github.io/data.html>
+<https://statnmap.com/fr/2017-03-11-rmarkdown-conditions-pour-creer-pdf-html-differentes-langues-et-images/>
 
+*Bibliographie*
 
