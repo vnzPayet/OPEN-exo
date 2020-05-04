@@ -8,7 +8,7 @@ output:
     toc_depth: 3
   html_document: default
   theme : united
-  bibliography: biblio.bib
+bibliography: biblio.bib
 csl: ../iso690-author-date-fr-no-abstract.csl
 ---
 
@@ -40,7 +40,7 @@ Les logiciels libres sont de plus en plus utilisés par la population française
 ## Les avantages
 
 Les logiciels libres ont de nombreux interêts à être utilisés par rapport aux logiciels propriétaires. Tout d'abord ils sont gratuits ou peu couteux, accessibles à tous et de qualités.
-Ces logiciels ont un grand avantage qui est d'être adaptable. En effet tout utilisateur peut analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, ce qui assure la fiabilité des algorithmes. Il est aussi possible de les modifier et de les adapter pour qu'ils corresponent au mieux à nos besoins. Les logiciels peuvent ainsi être améliorer constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels.(@guely_avantages_2002)
+Ces logiciels ont un grand avantage qui est d'être adaptable. En effet tout utilisateur peut analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, ce qui assure la fiabilité des algorithmes. Il est aussi possible de les modifier et de les adapter pour qu'ils corresponent au mieux à nos besoins. Les logiciels peuvent ainsi être améliorer constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels[@guely_avantages_2002].
 Les logiciels libres ont aussi un avantage à ne pas négliger qui est la liberté d'utilisation des données des utilisateurs qui ne sont pas réutilisées ou revendues par les créateurs. Les vies privées des utilisateurs ne sont donc pas impactées, il n'y a aucune prise de contrôle sur nos vies personnelles.
 
 ## Les inconvenients
