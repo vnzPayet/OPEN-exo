@@ -9,6 +9,17 @@ link-citations: yes
 title: "Installation de TinyTex"
 bibliography: biblio2.bib
 csl: iso690-author-date-fr-no-abstract.csl
+<<<<<<< HEAD
+=======
+=======
+output: pdf_document
+title: "Installation de TinyTex"
+df_print: paged
+bibliography: BibliographieSAUZE-TRUCHE.bib
+iso690-author-date-fr-no-abstract.csl
+
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
+>>>>>>> 5eae481e229709d48fff0405d5bdf35db478ae2a
 
 ---
 
