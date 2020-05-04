@@ -34,12 +34,19 @@ Pour certaines communautés Open source et Logiciels Libres se différencient es
 
 A-L Bla bla bla @framasoft_framasoft_nodate
 
-# Avantages et inconvenients
+#  Pourquoi choisir un logiciel libre?
+Les logiciels libres sont de plus en plus utilisée par la population française et apportent de nombreux bénéfices aux utilisateurs. (https://cnll.fr/news/resultats-enquete-annuelle-2017/)
 
-## Avantages
+## Les avantages
+Les logiciels libres ont de nombreux interêts à être utilisé par rapport aux logiciels propriétaires. Tout d'abord ils sont gratuits, accessibles à tous et de qualité.
+Ces logiciels ont un grand avantage qui est de d'avoir l'adaptabilité. En effet tout utilisateur peu analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, qui assure la fiabilité des algorithmes. Il est aussi possible de les modifier et de les adapter pour qu'ils corresponent au mieux à nos besoins. Les logiciels peuvent ainsi être améliorer constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels.(@guely_avantages_nodate)
+Les logiciels libres ont aussi un avantage à ne pas négliger qui est la liberté d'utilisation des données des utilisateurs qui ne sont pas réutilisé ou revendu par les créateurs. Les vies privées des utilisateures ne sont donc pas impactées sans aucune prise de contrôl de nos vis personnelles.
 
-
-## Inconvenients
+## Les insonveignants
+Le choix d'utilisation d'un logiciel libre a aussi des inconveignants comme devoir se former sur ces logiciels qui sont souvent un peu différents des logiciels propriétaires. De plus il y a souvent peu de support technique ou d'aide à la maintenance, ce qui peu en arrêter quelques uns.
+Le choix du logiciel peu aussi être difficile quand nous nous retrouvons devant des logiciels et des distributeurs qui se ressemblent beaucoup. Souvent les logiciels libres sont moins performants que les propriétaires, et évoluent moins vite. Ces logiciels ont aussi parfois des problèmes d'hebergement, ce coût étant assez élevé. (http://casteyde.christian.free.fr/system/linux/guide/online/x255.html)
+De plus la configuration des logiciels libre est complexe, ce qui peu être difficile pour un utilisateur non aguerri.
+Enfin certaines licences, comme GPL2 demmande que toute modification du logiceil soit publié  sous une licence GPL2 (qui est très restricive) car cela permet au logiciel d'être libre et que tout utilisateur ait les améliorations.
 
 # Leviers pour diffuser les logiciels libres
 
