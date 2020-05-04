@@ -1,0 +1,69 @@
+---
+title: 'Compilation de données : R Markdown & GitHub'
+author: 'G2 : L.ARSAC, Z.FROMENT, C.LAROCHE, P.SERVAIN, A.FALIGOT-GIRARDELLI, J.MAYER'
+date: "29/04/20"
+output: 
+  pdf_document:
+    fig_caption: yes
+    includes:  
+      in_header: my_header.tex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  word_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3 '3' #format glissant de la toc
+csl: iso690-author-date-fr-no-abstract.csl
+bibliography: biblio2.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#ajouter toute les library nécessaires
+library(ade4)
+library(FactoMineR)
+library(bookdown)
+library(knitr)
+library(tibble)
+library(tinytex)
+```
+
+```{r logo, echo=FALSE, out.width = '30%', fig.align = "center",fig.cap="Logo Rmarkdown"}
+knitr::include_graphics("rmarkdown.png")
+```
+
+
+**Résumé** : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
+..................................................................................................................
+..................................................................................................................
+
+# **Présentation des données **
+
+```{r child='G2_PresentationDonnees.Rmd'}
+```
+
+# **Une première analyse **
+
+```{r child='G2_PremiereAnalyse.Rmd'}
+```
+
+# **Analyse en Composante Principale**
+
+```{r child='G2_ACP.Rmd'}
+```
+
+# **Références**
+
+```{r child='G2_Ref.Rmd'}
+```
+
+
+

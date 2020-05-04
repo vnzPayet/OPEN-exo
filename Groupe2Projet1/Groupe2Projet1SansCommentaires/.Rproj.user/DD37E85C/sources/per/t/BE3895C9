@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588327271368.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3158831951",
+    "id" : "BE3895C9",
+    "lastKnownWriteTime" : 1588334478,
+    "last_content_update" : 1588334478,
+    "path" : "C:/Users/axelf/Desktop/Codage/OPEN/GitHub/OPEN-exo/Groupe2Projet1/Groupe2Projet1SansCommentaires/G2_PremiereAnalyse.Rmd",
+    "project_path" : "G2_PremiereAnalyse.Rmd",
+    "properties" : {
+        "cursorPosition" : "33,34",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

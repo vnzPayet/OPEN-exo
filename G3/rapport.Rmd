@@ -1,7 +1,8 @@
 ---
-title: Titre
-author: 
-date: 
+title: Températures dans les villes Françaises - Editions de rapports automatisés
+  avec Rmarkdown.
+author: "V Tolon"
+date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   html_document:
     fig_caption: yes
@@ -24,13 +25,13 @@ library(bookdown)
 library(knitr)
 ```
 
-```{r logo, echo=FALSE, out.width = '10%', fig.align = "center",fig.cap="Logo Rmarkdown"}
+```{r logo, echo=FALSE, out.width = '30%', fig.align = "center",fig.cap="Logo Rmarkdown"}
 knitr::include_graphics("rmarkdown.png")
 ```
 
 &nbsp;
 
-Résumé : Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
+**Résumé**: Dans ce rapport nous analyserons les temperatures des principales villes françaises.  
 ..................................................................................................................
 ..................................................................................................................
 ..................................................................................................................
@@ -49,24 +50,24 @@ Résumé : Dans ce rapport nous analyserons les temperatures des principales vil
 
 &nbsp;
 
- **Présentation des données **
+# **Présentation des données **
  Les données sont téléchargeables directement sur [ce site](https://husson.github.io/data.html) ou peuvent être importée directement sous R avec : 
  
 ```{r datatemp, echo = T}
 link<-"http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv"
-datatemp<-read.table(link,h=T,sep=";",dec=".",row.names=1, encoding="latin1")
+datatemp<-read.table(link,h=T,sep=";",dec=".",row.names=1)
 ```
 
 
 
 
- **Les données**
+## **Les données**
 
-```{r datatemp1, echo = F,eval=T}
+```{r datatemp1, echo = T,eval=T}
 head(datatemp)
 ```
 
-```{r datatemp2, echo = F,eval=T}
+```{r datatemp2, echo = F}
 temp<-unlist(datatemp[,1:12])
 villes<-factor(rep(row.names(datatemp),12))
 med<-tapply(temp,villes,mean)
@@ -74,9 +75,9 @@ med<-tapply(temp,villes,mean)
 
 &nbsp;
 
-Le jeu de donné est complété pour `r nrow(datatemp)` villes et contient  `r ncol(datatemp)` variables dont les tempértures des 12 mois de l'année, la moyenne, l'amplitude, latitude et longitude ainsi qu'un indicateur de grandes régions. La temperature moyenne en France est égale à r round(mean(unlist(datatemp[,1:12])),2) $+/-$ r round(sd(unlist(datatemp[,1:12])),2) degrés Celcius (moyenne $+/-$ écart type). La ville la plus froide est : r names(med[med==min(med)]) ; et la ville la plus chaudes est : r names(med[med==max(med)]) (Fig. \ref{fig:tempvilles}).
+Le jeu de donné est complété pour `r nrow(datatemp)` villes et contient  `r ncol(datatemp)` variables dont les tempértures des 12 mois de l'année, la moyenne, l'amplitude, latitude et longitude ainsi qu'un indicateur de grandes régions. La temperature moyenne en France est égale à `r round(mean(unlist(datatemp[,1:12])),2)` $+/-$ `r round(sd(unlist(datatemp[,1:12])),2)` degrés Celcius (moyenne $+/-$ écart type). La ville la plus froide est : `r names(med[med==min(med)])` ; et la ville la plus chaudes est : `r names(med[med==max(med)])` (Fig. \ref{fig:tempvilles}).
  
-```{r datatempville, echo = F,eval=T,fig.height = 2, fig.width = 6, fig.align = "center",fig.cap="Températures par villes\\label{fig:tempvilles}"}
+```{r datatempville, echo = F,eval=T,fig.height = 4, fig.width = 4.5, fig.align = "center",fig.cap="Températures par villes\\label{fig:tempvilles}"}
 villes2<-factor(villes,levels(villes)[order(med)])
 boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.7,cex.axis=0.7)
 ```
@@ -84,22 +85,48 @@ boxplot(temp~villes2,las=2,col="grey",ylab="Températures mensuelles",cex.lab=0.
 
  
 
+## **Températures par grandes régions**
+
+Les temperatures des quatres grandes régions sont : 
+
+ 
+```{r tempreg, echo = F}
+moyTR<-round(tapply(datatemp$Moye,datatemp$Région,mean),2)
+maxAR<-tapply(datatemp$Ampl,datatemp$Région,max)
+dd<-data.frame(Régions=levels(datatemp$Région),Moyenne=moyTR,AmplitudeM=maxAR)
+```
+
+&nbsp;
+
+\begin{center}Table 1 : Températures par grandes régions.\end{center}  
+Régions          |	Moyennes         | Amplitude maximum 
+---------------- | ----------------  | --------------------  
+`r dd$Région[1]` | `r dd$Moyenne[1]` | `r dd$AmplitudeM[1]` 
+`r dd$Région[2]` | `r dd$Moyenne[2]` | `r dd$AmplitudeM[2]` 
+`r dd$Région[3]` | `r dd$Moyenne[3]` | `r dd$AmplitudeM[3]` 
+`r dd$Région[4]` | `r dd$Moyenne[4]` | `r dd$AmplitudeM[4]` 
+
+**Interpretation**: Nous observons que ........................................................................  
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+..................................................................................................................
+
+&nbsp;
 
 # **Une première analyse **
 
 Nous réalisons des graphiques permettant d'analyser, par région : 
 
 * La position globale de la températures vis à vis de la moyenne nationale.
-
-  L'évolution mensuelle des températures dont notament : 
-  
-     L'amplitude
+* L'évolution mensuelle des températures dont notament : 
+    + L'amplitude
     + L'hétérogénéité inter-villes.
 
-# **Création d'une fonction graphique**
+## **Création d'une fonction graphique**
 
 Nous souhaitons produire un graphique representant par région les courbes mensuelles de chaque ville avec la courbe moyenne nationale. Voici un script possible : 
-```{r functemp, echo = F,eval=T}
+```{r functemp, echo = T}
 Tplot<-function(tempr,tmean) {
   plot(c(1,12),c(-10,30),type="n",ylab="Temperature (°C)",xlab="Mois",cex.lab=0.8,cex.axis=0.8)
   apply(tempr[,1:12],1,function(x) lines(1:12,x))
@@ -109,9 +136,9 @@ Tplot<-function(tempr,tmean) {
 ```
 
 
- *Application*
+## **Application**
 
-```{r graphtemp, echo = F,eval=T,fig.height = 5, fig.width = 6,fig.cap="Courbes de températures mensuelles par régions"}
+```{r graphtemp, echo = T,eval=T,fig.height = 5, fig.width = 6,fig.cap="Courbes de températures mensuelles par régions",fig.align = "center"}
 #température moyenne
 tmean<-apply(datatemp[,1:12],2,mean)
 #Découpage du tableau par région
@@ -139,13 +166,13 @@ legend(4,0,"Moyennes nationales",bty="n",col="red",lwd=2,cex=0.7)
 
 Une ACP permet d'analyser simulatnément les liens entre de multiples variables quantitatives et d'analyser les positions des individus statistiques vis à vis de l'ensemble de ces variables. Elle est basée sur la recheches d'axes principaux indépendants, chacuns plus ou moins liés aux variables d'entrées. Le première axe explique un maximum d'intertie, le second une moindre partie et ainsi de suite. Pour rappel l'intertie totale se calcul par : 
 $$I=\sum^N_{i=1}\frac{1}{N}d^2_{(e_i;g)}$$
-Avec : d^2_{e_i,g}=\sum^p_{j=1}x^2_{ij} = Distance euclidienne au centre de gravité du nuage de point (soit $(0;0)$) avec des données centrée et normées. 
+Avec : $d^2_{e_i,g}=\sum^p_{j=1}x^2_{ij}$ = Distance euclidienne au centre de gravité du nuage de point (soit $(0;0)$) avec des données centrée et normées. 
 
 ## **Les valeurs propres**
 
 Elles permettent de determiner la proportion d'intertie expliquée par chacuns des axes.  
 
-```{r valp, echo = T,eval=T,fig.cap="Valeurs propres",fig.height = 3, fig.width = 4}
+```{r valp, echo = T,eval=T,fig.cap="Valeurs propres",fig.height = 3, fig.width = 4,fig.align = "center"}
 res <- PCA(datatemp, quanti.sup=13:16, quali.sup=17,graph=F)
 par(mfrow=c(1,1),mar=c(4,4,2,2))
 barplot(res$eig[,2],ylab="Inertie %",names.arg = paste("Axe",1: nrow(res$eig)),las=2,cex.axis=0.7,cex.lab=0.8)
@@ -166,16 +193,16 @@ barplot(res$eig[,2],ylab="Inertie %",names.arg = paste("Axe",1: nrow(res$eig)),l
 ..................................................................................................................
 ..................................................................................................................
 
-```{r indiv, echo = T,eval=F,fig.cap="Cercle des corrélations",fig.height =5 , fig.width = 5}
+```{r indiv, echo = T,eval=T,fig.cap="Cercle des corrélations",fig.height =5 , fig.width = 5,fig.align = "center"}
 plot.PCA(res, choix="var",cex.axis=0.7,cex.lab=0.8)
 ```
 
 
 
 
-#### **Le nuage des individus**
+## **Le nuage des individus**
 
-```{r circle, echo = T,eval=F,fig.cap="Nuage des individus",fig.height = 5, fig.width = 5, fig.align = "center",}
+```{r circle, echo = T,eval=T,fig.cap="Nuage des individus",fig.height = 5, fig.width = 5, fig.align = "center",}
 plot.PCA(res, choix="ind", habillage=17,cex.axis=0.7,cex.lab=0.8)
 ```
 
@@ -192,9 +219,9 @@ plot.PCA(res, choix="ind", habillage=17,cex.axis=0.7,cex.lab=0.8)
 
 &nbsp;
 
-### **Conclusions  **
+# **Conclusions  **
 
-Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture cook2016climate même si van2013climate suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
+Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture [@cook2016climate] même si @van2013climate suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
 ..................................................................................................................
 ..................................................................................................................
 ..................................................................................................................
@@ -215,7 +242,7 @@ Les variations mensuelles des température semblent être liées aux differents 
 
 *Liens* 
 
-http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv   
+<http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv>   
 
 <https://husson.github.io/data.html>
 
