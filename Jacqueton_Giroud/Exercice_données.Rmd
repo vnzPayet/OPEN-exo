@@ -89,8 +89,8 @@ Enfin, afin d’éviter tout problèmes de stockage et de perte de fichiers, il 
 
 ## 3.	Documenter les données
 
-Afin de documenter les données, des métadonnées sont utilisées. Etymologiquement métadonnées signifie « données sur les données », c’est en fait un ensemble de données structurées permettant de décrire, expliquer, localiser les données afin que celles-ci soient plus compréhensibles. Elles permettent d’appliquer les principes FAIR et donc de faciliter (DoRANum, 2017), (INIST, CNRS, 2018) :
--	L’accessibilité : elles favorisent la recherche des données notamment grâce à la recherche multicritères.
+Afin de documenter les données, des métadonnées sont utilisées. Etymologiquement métadonnées signifie « données sur les données », c’est en fait un ensemble de données structurées permettant de décrire, expliquer, localiser les données afin que celles-ci soient plus compréhensibles. Elles permettent d’appliquer les principes FAIR et donc de faciliter (DoRANum, 2017), (INIST, CNRS, 2018) :  
+-	L’accessibilité : elles favorisent la recherche des données notamment grâce à la recherche multicritères.  
 -	L’interopérabilité : elles doivent permettre aux données d’être interprétables par des humains comme par des machines
 -	La pérennité : les métadonnées doivent permettre de documenter les éventuelles migrations d’un format de document à un autre
 -	La réutilisation : elles permettent une meilleure gestion et organisation des productions scientifiques notamment grâce à l’identification de l’auteur et la définition des usages.
