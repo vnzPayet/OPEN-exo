@@ -4,13 +4,33 @@ pdf_document:
   toc_depth: 3
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
-output: pdf_document
+output:
+  pdf_document: default
+link-citations: yes
 title: "Installation de TinyTex"
-df_print: paged
+bibliography: 2biblio.bib
+csl: iso690-author-date-fr-no-abstract.csl
+
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ade4)
+library(FactoMineR)
+library(bookdown)
+library(knitr)
+library(factoextra)
+library(tibble)
+library(drc)
+citation("drc")
+```
+
+```{r echo=F, out.width='50%', fig.align='center'}
+knitr::include_graphics('logo-tinytex.png')
+```
+
+```{r echo=F, pagebreak, results='asis', eval=is_latex_output()}
+cat('\\pagebreak')
 ```
 
 ## TinyTex
@@ -38,7 +58,9 @@ Patientez, le temps que TinyTex se télécharge et s'installe.
 Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier
 
 ### output: html
+
 vers
+
 ### output: pdf_document
 
 Et faire un knit le plus simplement du monde.
@@ -50,15 +72,15 @@ TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réa
 Pour rappel, \LaTeX est un langage de composition de documents, qui peut se résumer de cette manière :
 
 ```
-Ecrivez l'essentiel, on se charge de la mise en page"
+"Ecrivez l'essentiel, on se charge de la mise en page"
 ```
 
-# *Références*
+#References
 
 *Liens*
 
-https://yihui.org/tinytex/
+<https://yihui.org/tinytex/>
 
+&nbsp;
 
-
-*Bibliographie* 
+*Bibliographie*
