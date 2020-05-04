@@ -8,11 +8,13 @@ output:
   toc : true 
   toc_depth: 2
   theme : united
+  bibliography: biblio.bib
+csl: ../iso690-author-date-fr-no-abstract.csl
 ---
 
 # Qu'est-ce qu'un logiciel libre?
 
-A-L
+A-L Bla bla bla @framasoft_framasoft_nodate
 
 # Avantages et inconvenients
 
@@ -22,3 +24,5 @@ A-L
 ## Inconvenients
 
 # Leviers pour diffuser les logiciels libres
+
+#*Bibliographie*
