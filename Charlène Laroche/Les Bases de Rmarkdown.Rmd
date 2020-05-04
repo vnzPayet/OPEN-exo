@@ -8,6 +8,8 @@ output:
     number_sections: yes
     toc: yes
     toc_depth: 3
+csl: iso690-author-date-fr-no-abstract.csl
+bibliography: Biblio.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -49,24 +51,24 @@ Après avoir rempli ces différentes informations en choisissant de créer un do
 ### L'en tête
 
 Le début du script ou son en tête  est encadré par trois tirets, comme ci-après.
-```{r, echo = T,eval=F}
----
-title: "Utiliser Rmarkdown"
-author: "C. Laroche"
-date: "04/05/2020"
-output: html_document
----
-```
+    
+
+    ---
+    title: "Utiliser Rmarkdown"
+    author: "C. Laroche"
+    date: "04/05/2020"
+    output: html_document
+    ---
+
 On remarque que cette partie contient en faite les métadonnées du fichier (tire, auteur, date, format final du document). C'est ici que l'on pourra modifier la forme global du document, en ajoutant par exemple une table des matières dont on peut choisir le format.
 Pour ajouter une table des matière il suffit de rajouter `toc: yes` à la ligne avec une tabulation de plus du format de sortie, comme ci-après:
-```{r, echo = T,eval=F}
-output: 
-  html_document:
-    toc: yes
-    toc_depth: 3
-    toc_float: yes
----
-```
+
+    output: 
+      html_document:
+        toc: yes
+        toc_depth: 3
+        toc_float: yes
+    ---
 
 La table des matières ou table of content (toc) en anglais, peut être modifié à votre convenance, de nombreuses fonctionnalité existe, comme `toc_depth` qui permet de choisir à quel niveau la table des matières doit s'arrêter, ici on va jusqu'au troisième titre, `toc_float` ne peut être utilisé que sous un format html car cela permet d'avoir un menu déroulant.
 
@@ -77,51 +79,62 @@ Comme R est un language de programmation, il est très important de respecter to
 On différencie le texte du code R sur Rstudio par son fond blanc, contre in fond grisé pour le code. Cette partie peut-être mise en page avec des titres, des tirets, des mises en forme pour le texte ou les formules.
 Etudions quelques examples de fonctionnalité:
 
-Pour écrire en italique il faut mettre * dechaque côté du texte: *italique*
-Pour écrire en gras il faut mettre ** dechaque côté du texte: **gras** 
-Pour écrire en gras et en italique il faut mettre *** dechaque côté du texte: ***les deux*** 
+Pour écrire en italique il faut mettre * de chaque côté du texte: *italique*
+Pour écrire en gras il faut mettre ** de chaque côté du texte: **gras** 
+Pour écrire en gras et en italique il faut mettre *** de chaque côté du texte: ***les deux*** 
 
-`code au sein d'un texte` ajouter ``de chaque côté 
+`pour mettre du code au sein d'un texte` ajouter ``de chaque côté (grâce à AltGr7)
 
 `$A = \pi*r^{2}$` = $A = \pi*r^{2}$
+
 `$$E = mc^{2}$$` = $$E = mc^{2}$$
 
-'# Header1' =
 # Header1
+    # Header1
+
 ## Header 2 
+    ## Header 2 
+    
 ### Header 3 
-#### Header 4
-##### Header 5
-###### Header 6
-<!--comentaire de texte-->
-<http://www.rstudio.com>
-[link](www.rstudio.com)
-Jump to [Header 1](#anchor)
+    ### Header 3
 
-* unordered list
-+ sub-item 1
-+ sub-item 2
-- sub-sub-item 1
+* liste non ordonnées
+  + sous-item 1
+  + sous-item 2
+    - sous-sous-item 1
 * item 2
-Continued (indent 4 spaces)
-1. ordered list
-2. item 2
-i) sub-item 1
-A. sub-sub-item 1
-(@) A list whose numbering
-continues after
-(@) an interruption
-Term 1
-: Definition 1
 
-- slide bullet 1
-- slide bullet 2
-(>- to have bullets appear on click)
-horizontal rule/slide break:
-***
-A footnote [^1]
-[^1]: Here is the footnote.
+1. liste ordonnée
+2. item 2
+    i) sous-item 1
+
+Que ce soit pour les titre ou pour les listes à puces, il est important de bien noté qu'il faut un espace entre le texte et le dièse ou l'étoile.
+
+   <!--comentaire de texte--> permet de mettre un commentaire sans qu'il soit afficher sur le document final.
+
+Deux méthodes pour insérer un lien: 
+    <http://www.rstudio.com> ou `[link](www.rstudio.com)`
+
+Pour ajouter une image: `![Caption](Rstudio.jpg)`
+
+vous pouvez trouvez ces dfférentes fonctionnalité et d'autres fonctionnalités à l'adresse <https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf>
+
 
 
 ### La partie code R du document
+
+
+
+# Exemple de bibliographie
+
+@hansen_why_nodate
+
+[@global_change_research_program_glossary_nodate]
+
+@national_research_council_global_2000
+
+@noszczyk_review_2019
+
+@holman_improving_2019
+
 
