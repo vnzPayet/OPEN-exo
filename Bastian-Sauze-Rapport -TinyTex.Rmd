@@ -1,7 +1,7 @@
 ---
 title: "Installation de TinyTex"
-author: "Groupe 3"
-date: "29/04/2020"
+author: "Bastian SAUZE"
+date: "04/05/2020"
 output: pdf_document
 ---
 
