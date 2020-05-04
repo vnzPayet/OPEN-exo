@@ -1,6 +1,6 @@
 ---
 title: "Installation de TinyTex"
-author: "Bastian SAUZE"
+author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output: pdf_document
 ---

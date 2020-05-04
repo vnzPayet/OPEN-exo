@@ -1,9 +1,0 @@
----
-title: "imagegp"
-author: "Maële Maleysson"
-date: "4/29/2020"
-output: html_document
----
-
-# **Essai d'ajout d'une source image**
-![](logoisara.png)
