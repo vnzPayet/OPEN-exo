@@ -3,6 +3,8 @@ title: "Installation de TinyTex"
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output: pdf_document
+bibliography: biblio.bib
+
 ---
 
 ```{r setup, include=FALSE}
@@ -45,3 +47,7 @@ en
 ### output: pdf_document
 
 Et faire un knit le plus simplement du monde.
+
+##Références
+
+*Bibliographie* 
