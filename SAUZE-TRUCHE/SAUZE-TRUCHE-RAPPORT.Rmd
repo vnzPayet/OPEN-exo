@@ -1,6 +1,7 @@
 ---
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
 output:
   pdf_document:
   toc: yes
@@ -9,32 +10,27 @@ link-citations: yes
 title: "Installation de TinyTex"
 bibliography: biblio2.bib
 csl: iso690-author-date-fr-no-abstract.csl
+=======
+output: pdf_document
+title: "Installation de TinyTex"
+df_print: paged
+bibliography: Bibliographie SAUZE - TRUCHE.bib
+iso690-author-date-fr-no-abstract.csl
+
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
 
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(ade4)
-library(FactoMineR)
-library(bookdown)
-library(knitr)
-library(factoextra)
-library(tibble)
-library(drc)
-citation("drc")
 ```
 
-```{r echo=F, out.width='50%', fig.align='center'}
-knitr::include_graphics('logo-tinytex.png')
-```
-
-```{r echo=F, pagebreak, results='asis', eval=is_latex_output()}
-cat('\\pagebreak')
-```
+![Un petit outil plein de ressources !](logo-tinytex.png)
 
 ## TinyTex
 
-Une bibliothèque logicielle pour compiler et créer facilement des rapport en PDF avec le langage R.
+Une bibliothèque logicielle pour compiler et créer facilement des rapports en PDF avec le langage R.TinyTeX est donc une distribution LaTeX légère, portable, multiplateforme et facile à entretenir d'après @Grolemund
+
 
 ## Télécharger TinyTex
 
@@ -57,9 +53,7 @@ Patientez, le temps que TinyTex se télécharge et s'installe.
 Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier
 
 ### output: html
-
 vers
-
 ### output: pdf_document
 
 Et faire un knit le plus simplement du monde.
@@ -71,23 +65,31 @@ TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réa
 Pour rappel, \LaTeX est un langage de composition de documents, qui peut se résumer de cette manière :
 
 ```
-"Ecrivez l'essentiel, on se charge de la mise en page"
+Ecrivez l'essentiel, on se charge de la mise en page"
 ```
 
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
 ```{r echo=F, results='asis', eval=is_latex_output()}
 cat('\\pagebreak')
 ```
 
 # References
+=======
+# *Références*
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
 
 ## *Liens*
 
-<https://yihui.org/tinytex/>
+https://yihui.org/tinytex/
 
-&nbsp;
 
+
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
 ## *Bibliographie*
 
 ---
 nocite: '@*'
 ---
+=======
+*Bibliographie* 
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
