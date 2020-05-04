@@ -1,21 +1,36 @@
 ---
-pdf_document:
-  toc: yes
-  toc_depth: 3
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
+output:
+  pdf_document:
+  toc: yes
+  toc_depth: 3
+link-citations: yes
+title: "Installation de TinyTex"
+bibliography: biblio2.bib
+csl: iso690-author-date-fr-no-abstract.csl
+=======
 output: pdf_document
 title: "Installation de TinyTex"
 df_print: paged
+bibliography: Bibliographie SAUZE - TRUCHE.bib
+iso690-author-date-fr-no-abstract.csl
+
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
+
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+![Un petit outil plein de ressources !](logo-tinytex.png)
+
 ## TinyTex
 
-Une bibliothèque logicielle pour compiler et créer facilement des rapport en PDF avec le langage R.
+Une bibliothèque logicielle pour compiler et créer facilement des rapports en PDF avec le langage R.TinyTeX est donc une distribution LaTeX légère, portable, multiplateforme et facile à entretenir d'après @Grolemund
+
 
 ## Télécharger TinyTex
 
@@ -53,12 +68,28 @@ Pour rappel, \LaTeX est un langage de composition de documents, qui peut se rés
 Ecrivez l'essentiel, on se charge de la mise en page"
 ```
 
-# *Références*
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
+```{r echo=F, results='asis', eval=is_latex_output()}
+cat('\\pagebreak')
+```
 
-*Liens*
+# References
+=======
+# *Références*
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd
+
+## *Liens*
 
 https://yihui.org/tinytex/
 
 
 
+<<<<<<< HEAD:SAUZE et TRUCHE/SAUZE et TRUCHE - RAPPORT .Rmd
+## *Bibliographie*
+
+---
+nocite: '@*'
+---
+=======
 *Bibliographie* 
+>>>>>>> 6cf7ea0d23790dae7992cc937ff93f82fdbc4153:SAUZE-TRUCHE/SAUZE-TRUCHE-RAPPORT.Rmd

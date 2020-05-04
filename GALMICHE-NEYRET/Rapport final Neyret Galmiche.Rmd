@@ -12,7 +12,7 @@ output:
   pdf_document:
     toc: yes
     toc_depth: 3
-bibliography: biblio2.bib
+bibliography: biblio.bib
 csl: iso690-author-date-fr-no-abstract.csl
 ---
 
@@ -72,12 +72,19 @@ Elle se base également sur le Big Data, comprenant les 3V qui sont: Volume, Var
 
 L'IA actuelle se base sur diffrentes phases d'apprentissage: 
 
-
-```{r graph, echo=FALSE, out.width = '50%', fig.align = "center", fig.cap="Phases apprentissage"}
+```{r graph, echo=FALSE, out.width = '70%', fig.align = "center", fig.cap="Phases apprentissage"}
 knitr::include_graphics("phase-apprentissage.png")
 ```
 
-# **Les phases **
+L'IA se base également sur différentes machine learning comme le Clustering hiérarchique, le k-means, le KNN, la réduction dimensionnelle, le neurone artificiel, etc...
+
+# **L'avenir de l'IA **
+
+L'avenir de l'IA est d'aider les être humains dans leur vie quotidienne et professionnelle comme durant les actes médicaux, dans la gestion du terrorisme, etc...
+
+Toutefois, des questions se posent encore et nous devons faire preuve de vigilance dans son développement et sa gestion. Afin de rester éthique, tout en gardant un équilibre entre sciences, techniques et technologies. Il faudrait également veiller à ce que l'humain rester maître de son outils. 
+
+*L'Humain est à la base ... et il doit le rester!*
 
 # **Références**
 

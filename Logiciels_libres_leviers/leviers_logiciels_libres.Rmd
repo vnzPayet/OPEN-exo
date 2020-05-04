@@ -8,7 +8,7 @@ output:
   toc : true 
   toc_depth: 2
   theme : united
-  bibliography: biblio.bib
+bibliography: biblio.bib
 csl: ../iso690-author-date-fr-no-abstract.csl
 ---
 
@@ -32,7 +32,7 @@ Les logiciels sont dit libres dans le sens liberté de les modifier, améliorer,
 
 Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités.
 
-A-L Bla bla bla @framasoft_framasoft_nodate
+A-L Bla bla bla @framasoft_framasoft_2020
 
 # Avantages et inconvenients
 
@@ -42,5 +42,10 @@ A-L Bla bla bla @framasoft_framasoft_nodate
 ## Inconvenients
 
 # Leviers pour diffuser les logiciels libres
+
+---
+nocite:
+@framasoft_framasoft_2020, @guely_definition_2002, @guely_avantages_2002, @guely_convergence_2002, @noauthor_index_2009, @noauthor_open_2020, @modification__27062015_2018_quest-ce_2015, @noauthor_cnll_2017
+...
 
 #*Bibliographie*
