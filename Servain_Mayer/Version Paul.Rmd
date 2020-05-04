@@ -1,15 +1,59 @@
 ---
-title: Générer des .pdf à partir d'un document Rmarkdown (.rmd)
-author: Juliette Meyer & Paul Servain
+title: "Générer des .pdf à partir d'un document Rmarkdown (.rmd)"
+author: Juliette Mayer & Paul Servain
 date: 04/05/2020
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: 3
   html_document:
     fig_caption: yes
     number_sections: yes
     toc: yes
     toc_depth: 3
     toc_float: true
-  pdf_document:
-    toc: yes
-    toc_depth: 3
+csl: iso690-author-date-fr-no-abstract.csl
+bibliography: biblio2.bib
 ---
+
+
+
+# **Installer Knitr**
+
+A partir d’un document .rmd (rmarkdown), il est possible de générer (« knit ») des documents HTML, PDF, Word, GitHub markdown, etc…
+Pour cela, nous utilisons le package Knitr.
+Il faut donc s’assurer que le package Knitr est bien installé
+
+* Tapez `install.packages("knitr")`
+
+La console devrait afficher le message `knitr’ successfully unpacked and MD5 sums checked`
+
+Ainsi nous pouvons générer des documents de différents formats (html, pdf, word, .md, ...)
+
+# **Générer un PDF**
+
+
+
+A partir d’un document .rmd (rmarkdown), il est possible de générer (« knit ») des documents HTML, PDF ou Word.
+Nous verrons ici comment générer un document PDF.
+
+
+* Cliquez sur la petite flèche l’icône Knit située dans la barre au dessus de votre script. Un menu déroulant apparaît, vous proposant les options « Knit to HTML », « Knit to PDF » et « Knit to Word ». 
+
+``` {r logo, echo=FALSE, out.width = '50%', fig.align = "center",fig.cap="Menu déroulant 'Knit' "}
+knitr::include_graphics("icone knitJPG.JPG")
+```
+
+
+* Cliquez sur « Knit to PDF ».
+
+
+# **Références**
+
+*Liens* 
+
+http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv   
+
+<https://husson.github.io/data.html>
+
+
