@@ -2,14 +2,13 @@
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output:
-  pdf_document:
+  pdf_document: default
   toc: yes
   toc_depth: 3
 link-citations: yes
 title: "Installation de TinyTex"
-bibliography: biblio2.bib
+bibliography: biblio.bib
 csl: iso690-author-date-fr-no-abstract.csl
-
 ---
 
 ```{r setup, include=FALSE}
