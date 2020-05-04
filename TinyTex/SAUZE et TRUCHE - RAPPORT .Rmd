@@ -38,7 +38,9 @@ Patientez, le temps que TinyTex se télécharge et s'installe.
 Une fois que TinyTex est installé, vous pouvez modifier en haut du fichier
 
 ### output: html
-vers
+
+en
+
 ### output: pdf_document
 
 Et faire un knit le plus simplement du monde.
@@ -50,8 +52,9 @@ TinyTex est une bibliothèque logicielle qui implémente \LaTeX dans R pour réa
 Pour rappel, \LaTeX est un langage de composition de documents, qui peut se résumer de cette manière :
 
 ```
-Ecrivez l'essentiel, on se charge de la mise en page"
+"Ecrivez l'essentiel, on se charge de la mise en page"
 ```
+D'où l'intérêt du \LaTeX, qui va mettre en page le fichier MarkDown, de la même manière que R le fait nativement pour l'export en HTML. Avec un code tout simple où on ne met que du contenu, la mise en page se fait automatiquement en \LaTeX avant d'être convertie en PDF pour consultation.
 
 # *Références*
 
