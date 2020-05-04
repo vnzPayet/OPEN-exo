@@ -1,14 +1,13 @@
 ---
-pdf_document:
-  toc: yes
-  toc_depth: 3
 author: "Bastian SAUZE et Perrine TRUCHE"
 date: "04/05/2020"
 output:
-  pdf_document: default
+  pdf_document:
+  toc: yes
+  toc_depth: 3
 link-citations: yes
 title: "Installation de TinyTex"
-bibliography: 2biblio.bib
+bibliography: biblio2.bib
 csl: iso690-author-date-fr-no-abstract.csl
 
 ---
@@ -75,12 +74,20 @@ Pour rappel, \LaTeX est un langage de composition de documents, qui peut se rés
 "Ecrivez l'essentiel, on se charge de la mise en page"
 ```
 
-#References
+```{r echo=F, results='asis', eval=is_latex_output()}
+cat('\\pagebreak')
+```
 
-*Liens*
+# References
+
+## *Liens*
 
 <https://yihui.org/tinytex/>
 
 &nbsp;
 
-*Bibliographie*
+## *Bibliographie*
+
+---
+nocite: '@*'
+---
