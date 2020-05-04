@@ -17,10 +17,10 @@ Une bibliothèque logicielle pour compiler et créer facilement des rapport en P
 
 Pour plus d'informations, vous pouvez visiter le site https://yihui.org/tinytex/
 
+## Logo 
 
-
-```{r cars}
-
+```{r logo, echo=FALSE, out.width = '10%', fig.align = "center",fig.cap="Logo Rmarkdown"}
+knitr::include_graphics("logo-tinytex.png")
 ```
 
 ## Télécharger TinyTex
