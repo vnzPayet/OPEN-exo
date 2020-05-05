@@ -14,8 +14,8 @@ csl: ../iso690-author-date-fr-no-abstract.csl
 
 ---
 
-```{r logo, echo=FALSE, out.width = '20%', fig.align = "right"}
-knitr::include_graphics("../Isara-quadri.jpg")
+```{r logo, echo=FALSE, out.width = '20%', fig.align = "center"}
+knitr::include_graphics(c("../Isara-quadri.jpg", "../logoR.jpg"))
 ```
 
 
