@@ -13,12 +13,12 @@ bibliography: biblio.bib
 csl: ../iso690-author-date-fr-no-abstract.csl
 
 ---
-```{r logo, echo=FALSE, out.width = '10%', fig.align = "right"}
-knitr::include_graphics("Isara-quadri.jpg")
+```{r logo, echo=FALSE, out.width = '20%', fig.align = "right"}
+knitr::include_graphics("../Isara-quadri.jpg")
 ```
 
 
-
+\newpage
 # Qu'est-ce qu'un logiciel libre?
 
   D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source)[@modification__27062015_2018_quest-ce_2015] : 
@@ -66,9 +66,8 @@ De plus la configuration des logiciels libre est complexe, ce qui peut être dif
   Cela permettrait une conscience collective des logiciels non libres qui utilisent entrent constamment dans nos vies privées et utilisent nos données plus ou moins à notre insu.
   
 ---
-nocite:
-@framasoft_framasoft_2020, @guely_definition_2002, @guely_avantages_2002, @guely_convergence_2002, @noauthor_index_2009, @noauthor_open_2020, @modification__27062015_2018_quest-ce_2015, @noauthor_cnll_2017
+nocite: '@*'
 ...
 
-
+\newpage
 # *Bibliographie*
