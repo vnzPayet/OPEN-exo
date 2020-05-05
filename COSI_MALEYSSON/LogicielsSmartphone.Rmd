@@ -4,6 +4,8 @@ author: "Maële Maleysson et Orianne Cosi"
 date: "5/4/2020"
 output:
   pdf_document: default
+  html_document:
+    df_print: paged
 csl: ../iso690-author-date-fr-no-abstract.csl
 title: "Les logiciels libres sur smartphone"
 bibliography: bibliomobile.bib
@@ -13,20 +15,22 @@ bibliography: bibliomobile.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Introduction
+# Introduction
   
-  De nos jours, une grande partie des logiciels informatiques ne sont pas libres de droit. Un logiciel libre est un logiciel dont les codes sont accessibles pour les utilisateurs. Les logiciels libres sont contrôlés directement par ses utilisateurs. A contrario, un logiciel non libre, contrôlé par une société, ne permet pas l'accès aux codes pour les utilisateurs, et ne peux donc pas être modifiés. 
+  De nos jours, une grande partie des logiciels informatiques ne sont pas libres de droit. Un logiciel libre est un logiciel dont les codes sont accessibles pour les utilisateurs. Les logiciels libres sont contrôlés directement par ses utilisateurs. A contrario, un logiciel propriétaire, contrôlé par une société, ne permet pas l'accès aux codes pour les utilisateurs, et ne peut donc pas être modifié. 
+  
 
-## I. Pourquoi utiliser des logiciels libres sur smartphone?
-Les logiciels libres sont définit par 4 libertés : 
+# I. Pourquoi utiliser des logiciels libres sur smartphone?
+
+Les logiciels libres sont définis par 4 libertés :
 
  - liberté 0 : la liberté d'exécuter le programme pour tous les usages
- - liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos besoins. Pour ceci l'accès au code source est une condition requise.
-- liberté 2 : la liberté de redistribuer des copies, donc d'aider votre voisin.
-- liberté 3 : la liberté d'améliorer le programme et de publier vos améliorations, pour en faire profiter toute la communauté. Pour ceci l'accès au code source est une condition requise."
+ - liberté 1 : la liberté d'étudier le fonctionnement du programme, et de l'adapter à nos besoins. Pour ceci l'accès au code source est une condition requise.
+- liberté 2 : la liberté de redistribuer des copies, donc d'aider notre voisin.
+- liberté 3 : la liberté d'améliorer le programme et de publier nos améliorations, pour en faire profiter toute la communauté. Pour ceci l'accès au code source est une condition requise."
 Le problème que pose les logiciels non libre est les sociétés sont en capacité d'espionner ces utilisateurs." 
 
-Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs soucieux de reprendre le contrôle de leurs données, l'émergence des smartphone équipés d'internet amènent également à se poser la question du libre sur nos téléphones. En effet, les sociétés possédant les logiciels non libres ont la possibilité de faire des changements sur nose logiciels, à distance et sans l'accord de l'utilisateur. De plus, ces mêmes logiciel peuvent avoir accès à tout ce qu'on a autorisé en le téléchargeant : camara, microphone, etc. Or cela est d'une préocuppation majeure : combien d'utilisateurs emportent leur smartphone jusque dans la salle de bain ou leurs toilettes? Le développement et l'utilisation de logiciels libres sur nos smartophne est donc d'une importance capitale.
+Si les logiciels libres préocupaient essentiellement les utilisateurs d'ordinateurs soucieux de reprendre le contrôle de leurs données, l'émergence des smartphones équipés d'internet amènent également à se poser la question du libre sur nos téléphones. En effet, les sociétés possédant les logiciels non libres ont la possibilité de faire des changements sur nos logiciels, à distance et sans l'accord explicite de l'utilisateur. De plus, ces mêmes logiciels peuvent avoir accès à tout ce qu'on a autorisé en le téléchargeant : caméra, microphone, etc. Or cela est d'une préocuppation majeure : combien d'utilisateurs emportent leur smartphone jusque dans la salle de bain ou leurs toilettes? Le développement et l'utilisation de logiciels libres sur nos smartphones est donc d'une importance capitale.
 @halpanet_logiciels_2010; @framasoft_framasoft_2019
 
 # II. Les solutions à adopter sur son smartphone
@@ -86,14 +90,15 @@ Ce navigateur créé en 2016 par le cofondateur de Mozilla est de plus en plus c
 On peut cependant noter que cette application n'est pas gratuite : elle coûtera environ 8€/an à son utilisateur.
  @gautreau_les_2019 
 
-## Conclusion
+# Conclusion
 
   Bien qu'aujourd'hui Android ou IOS soient composés de nombreux logiciels libres, les appareils mobiles sont généralement vendus avec plusieurs logiciels propriétaires. Afin de reprendre le contrôle total des données qui passent pas nos téléphones, de nombreux logiciels libres se sont développés. Il en existe aujourd'hui pour pratiquement chaque utilisation et permettent de maîtriser complètement notre téléphone.
   
   Ces logiciels semblent avoir de l'avenir avec des utilisateurs souvent de plus en plus méfiants des logiciels propriétaires. 
   @kauffmann_pourquoi_2013
+
+
   
-  
-**Bilbliographie** :
+# **Bilbliographie** :
 
 
