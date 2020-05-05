@@ -1,7 +1,7 @@
 
 ---
-title: "La démocratisation des logiciels libres"
-author: "Dylan Clair, Salomé Hamard et Anne-Laure Girard"
+title: "**La démocratisation des logiciels libres**"
+author: "*Dylan Clair, Salomé Hamard et Anne-Laure Girard*"
 date: "04/05/2020"
 output:
   pdf_document: 
@@ -13,6 +13,7 @@ bibliography: biblio.bib
 csl: ../iso690-author-date-fr-no-abstract.csl
 
 ---
+
 ```{r logo, echo=FALSE, out.width = '20%', fig.align = "right"}
 knitr::include_graphics("../Isara-quadri.jpg")
 ```
@@ -55,7 +56,7 @@ Ces logiciels ont un grand avantage qui est d'être **adaptable**. En effet tout
   Le choix d'utilisation d'un logiciel libre a aussi des inconvénients comme devoir se **former** sur ces logiciels qui sont souvent un peu différents des logiciels propriétaires. De plus il y a souvent **peu de supports techniques** ou d'aide à la maintenance, ce qui peut en arrêter quelques uns.
 Le choix du logiciel peut aussi être difficile quand nous nous retrouvons devant des logiciels et des distributeurs qui se ressemblent beaucoup. Souvent les logiciels libres sont moins performants que les propriétaires, et évoluent moins vite. Ces logiciels ont aussi parfois des problèmes d'hebergement, ce coût étant assez élevé[@noauthor_avantages_2020]. 
 De plus la configuration des logiciels libre est complexe, ce qui peut être difficile pour un utilisateur non aguerri.
-  Enfin certaines licences, comme GPL2, demmande que *toute modification du logiciel** (par son code) **soit publiée  sous une licence** GPL2 (qui est très restricive) car cela permet au logiciel d'être libre et que tout utilisateur ait les améliorations.
+  Enfin certaines licences, comme GPL2, demmande que **toute modification du logiciel**(par son code) **soit publiée  sous une licence** GPL2 (qui est très restricive) car cela permet au logiciel d'être libre et que tout utilisateur ait les améliorations.
 
 
 # Leviers pour diffuser les logiciels libres
