@@ -1,0 +1,66 @@
+---
+title: 'Utilisation de GitHub en équipe'
+author: 'E.ROMETTE & A.FALIGOT-GIRARDELLI'
+date: "04/05/20"
+output: 
+  word_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    fig_caption: yes
+    includes:  
+      in_header: my_header.tex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bookdown)
+library(knitr)
+library(tinytex)
+```
+
+```{r logo, echo=FALSE, out.width = '30%', fig.align = "center"}
+knitr::include_graphics("github_logo.jpg")
+```
+
+
+**Résumé** : Dans cette synthèse nous allons étudier la gestion de GitHub pour un travail d'équipe.
+
+# <ins>***Initialisation du repository d'équipe***
+
+```{r child='Initialisation.Rmd'}
+```
+
+# <ins>***Ajouter les membres de l'équipe***
+
+```{r child='Ajout.Rmd'}
+```
+
+
+# <ins>***Gestion de fichiers par la console***
+
+```{r child='Invitdecome.Rmd'}
+```
+
+# <ins>***Gestion de fichiers par GitHub Desktop***
+
+```{r child='Logiciel.Rmd'}
+```
+
+# <ins>***Références***
+
+```{r child='Ref.Rmd'}
+```
+
+
