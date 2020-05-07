@@ -32,13 +32,13 @@ knitr::include_graphics("creation.png")
 ***"Description"*** correspond à la description qui sera faite en haut de votre répertoire.
 &nbsp;
 
-***"Public/Private"*** permet de choisir si le répertoire est visible de tout ceux qui visitent le profil du créateur ou non. En cas de "Private", il faut une autorisation d'accès.
+***"Public/Private"*** permet de choisir si le répertoire est visible de tous ceux qui visitent le profil du créateur ou non. En cas de "Private", il faut une autorisation d'accès.
 
-***"README.Md"*** correspond à un fichier en Markdown donnant les informations principales du répertoires. Il est souvent utilisé pour donner les consignes, des indications ou les notes de mises à jour.
+***"README.Md"*** correspond à un fichier en Markdown donnant les informations principales du répertoire. Il est souvent utilisé pour donner les consignes, des indications ou les notes de mises à jour.
 
 ***"Add .gitignore"*** permet de créer un fichier `.gitignore` qui peut être édité textuellement. Ainsi, si le dossier contient :
 
-`'*.txt' ` --> le fait de mettre une astérisque permet d'ignorer lors du push tous les fichiers se terminant par l'extension `.txt`.  
+`'*.txt' ` --> le fait de mettre un astérisque permet d'ignorer lors du push tous les fichiers se terminant par l'extension `.txt`.  
 `'Projet1.docx'` --> cette ligne permettra de ne pas synchroniser avec le répertoire en ligne le fichier appelé `Projet1.docx`.  
 Par contre, `*.docx` fera que lors du push, tous les fichiers `.docx` seront ignorés.  
 Cela est pratique lors de la création en commun de dossiers contenant des fichiers R car celui-ci créé automatiquement des fichiers `.Rhistory` et ainsi, écrire dans le .gitignore `.Rhistory` ignorera automatiquement tous les fichiers `.Rhistory`. 

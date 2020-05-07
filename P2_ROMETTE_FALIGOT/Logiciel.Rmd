@@ -32,7 +32,7 @@ knitr::include_graphics("image_77.png")
 ## *Cloner un répertoire :*
 
 Lors du clonage d'un répertoire, vous avez 3 onglets :  
-- *`GitHub.com`* vous permet de sélectionner un répertoire que vous possédez déjà sur votre compte en ligne, que ce soit un répertoire à vous, un où vous êtes autorisés à éditer ou un *fork*, c'est à dire un suivi des mise à jour d'un répertoire d'une personne, sans pour autant y avoir la possiblité de l'éditer.  
+- *`GitHub.com`* vous permet de sélectionner un répertoire que vous possédez déjà sur votre compte en ligne, que ce soit un répertoire à vous, un où vous êtes autorisés à éditer ou un *fork*, c'est à dire un suivi des mises à jour d'un répertoire d'une personne, sans pour autant y avoir la possiblité de l'éditer.  
 Une fois le répertoire sélectionné, vous pouvez choisir l'emplacement d'enregistrement via *`Local path`* puis *`Browse`*.  
 - *`GitHub Enterprise Server`* sert dans le cadre d'une entreprise, nous ne nous y intéressons pas.  
 - *`URL`* vous permet de faire comme le premier onglet sauf qu'au lieu de choisir de cloner un répertoire venant de votre compte en ligne, vous avez la possibilité de directement le cloner via un lien qui vous a été fourni par le propriétaire.
@@ -94,9 +94,9 @@ knitr::include_graphics("image_73.png")
 *****************************************************************
 
 ## *Le principe de "branch" :*
-Lors d'une édition par plusieurs personnes d'un même répertoire, dans le cas où l'on souhaiterai partir sur des versiosn différentes avec les mêmes bases, ou versions non finies nécessitant encore des modifications, il est possible de créer des *`branchs`*.  
+Lors d'une édition par plusieurs personnes d'un même répertoire, dans le cas où l'on souhaiterai partir sur des versions différentes avec les mêmes bases, ou versions non finies nécessitant encore des modifications, il est possible de créer des *`branchs`*.  
 La principale se nomme *`master`* et contient le fichier principal.  
-Il est possible d'en créer une (ou d'en sélectionner) en cliquant sur *`Current branch`* puis en choisissant celle que l'on veut éditer ou en créer une.  
+Il est possible d'en créer une (ou d'en sélectionner une) en cliquant sur *`Current branch`* puis en choisissant celle que l'on veut éditer ou en créer une.  
 Lorsque l'on souhaite fusionner 2 branches, il suffit de faire une *`Pull request`*, c'est à dire une demande de fusion des branches.  
 Il y aura toutefois auparavant une annonce sur l'accueil du logiciel comme quoi il est possible de fusionner des branches, et qu'il faut choisir laquelle sera fusionnée à laquelle.
 
@@ -118,7 +118,7 @@ Sur l'image, il est indiqué *`Pull origin`*, toutefois cela peut aussi être *`
 
 ### <ins> Pull <ins> : 
 
-Lorsque des modifications ont été apportées en ligne, il est nécessaire récupérer les dernières versions via : *`Pull origin`*.  
+Lorsque des modifications ont été apportées en ligne, il est nécessaire de récupérer les dernières versions via : *`Pull origin`*.  
 Il est possible qu'il y ait des conflits, en ce cas le plus simple est d'aller dans le dossier concerné (manuellement), puis de supprimer le(s) fichier(s) qui pose souci, ou du moins le déplacer sur le Bureau si on souhaite le conserver.
 
 ```{r pic10, echo=FALSE, out.width = '80%', fig.align = "center"}

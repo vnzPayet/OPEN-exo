@@ -1,10 +1,12 @@
 ---
 title: 'Utilisation de GitHub en équipe'
 author: 'E.ROMETTE & A.FALIGOT-GIRARDELLI'
-date: "04/05/20"
+date: "07/05/20"
 output: 
-  word_document:
+  pdf_document:
     fig_caption: yes
+    includes:  
+      in_header: my_header.tex
     number_sections: yes
     toc: yes
     toc_depth: 3
@@ -14,10 +16,8 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
+  word_document:
     fig_caption: yes
-    includes:  
-      in_header: my_header.tex
     number_sections: yes
     toc: yes
     toc_depth: 3

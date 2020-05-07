@@ -8,10 +8,10 @@ Pour ajouter des collaborateurs, il faut aller dans notre dépôt/repository. Un
  2. Puis dans ***Manage Access***
  3. Cliquer sur ***Invite a collaborator***
  4. Entrer le nom de notre collaborateur 
- 5. Lui envoyer une invitation
+ 5. Lui envoyer une invitation par mail
 
 ```{r , echo=FALSE, out.width = '100%', fig.align = "center",fig.cap="Ajout d'un collaborateur"}
 knitr::include_graphics("collaborateur.png")
 ```
 
-Une fois que la personne aura acceptée l'invitation, elle pourra utiliser le dépôt librement.
+Une fois que la personne aura accepté l'invitation, elle pourra utiliser le dépôt librement.
