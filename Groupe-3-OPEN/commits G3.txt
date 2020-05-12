@@ -1,0 +1,351 @@
+commit 071fdc4794eacbfb6eaf4b3a048a05118e4a7c8c
+Author: Perrine98 <perrine.truche@free.fr>
+Date:   Thu Apr 30 16:25:42 2020 +0200
+
+    ajout d'un titre au graphique
+
+commit 3cc233a027d15e2d2980ec775b4f11f240f348b6
+Merge: 940a306 3adb32d
+Author: Celine-jacqueton <64521558+Celine-jacqueton@users.noreply.github.com>
+Date:   Thu Apr 30 11:53:03 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 3adb32d4a440ef8af44c99fbde65ab15befc3219
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Thu Apr 30 11:46:45 2020 +0200
+
+    ajout des noms groupe 3
+
+commit 940a306346292d2e7cce3740f7048ff4a6c69de7
+Merge: 6ec798a 72760e3
+Author: Celine-jacqueton <64521558+Celine-jacqueton@users.noreply.github.com>
+Date:   Thu Apr 30 11:43:35 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit fa22b097488cf753997e7580931df8fd5cf46ed4
+Merge: 2404534 72760e3
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Thu Apr 30 11:41:47 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 2404534527b5ba2d45df18201270bc919ead7734
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Thu Apr 30 11:35:51 2020 +0200
+
+    ajout des noms
+
+commit 72760e3da0ed15dd30ea88820d566ffa0d26aa20
+Author: Perrine98 <perrine.truche@free.fr>
+Date:   Thu Apr 30 11:33:13 2020 +0200
+
+    modif source regions
+
+commit b851d4e6e940d27157dd245702db2dceb27fd781
+Merge: 14af99b 4f4d1e8
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Thu Apr 30 11:26:17 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 4f4d1e8a372845d71a2360b8da7316dcd8ec9957
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 18:39:45 2020 +0200
+
+    changement du nom d'auteur et de la date
+
+commit fae72626f95f35656d85f06970f7735467827e1b
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 18:36:52 2020 +0200
+
+    version pdf du rapport
+
+commit 1f53b81bdc1effc1ff21a04d3c18807543b9e4bf
+Merge: 70bc9be 2084244
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 18:32:05 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 14af99bfe7e660719923a8a019952bdc7e57f41f
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Wed Apr 29 18:14:57 2020 +0200
+
+    Create noms_groupe.html
+
+commit 208424436bf9a118f51abfe38bd77e1114dafa83
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 18:13:11 2020 +0200
+
+    Update rapport_bad_G3V2.Rmd
+
+commit 6ec798a17ec370dccf8104b8109cd10e80a9a61a
+Author: Celine-jacqueton <64521558+Celine-jacqueton@users.noreply.github.com>
+Date:   Wed Apr 29 18:12:27 2020 +0200
+
+    boxplot-l64.R
+
+commit 7e298b2166b80d87d535ec390d84710d44e03b3d
+Author: Eloise33 <64475173+Eloise33@users.noreply.github.com>
+Date:   Wed Apr 29 18:11:47 2020 +0200
+
+    nom du groupe
+
+commit d5d18e1bb6113d81866783f20755dd74ef59243e
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 18:09:37 2020 +0200
+
+    Revert "Update rapport_bad_G3V2.Rmd"
+    
+    This reverts commit adee0867bcc192bcb6262847988edcc406025a5d.
+
+commit 12b290c953509e88d04ddbce5191d4d7f9ed7c2a
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 18:09:22 2020 +0200
+
+    Revert "Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN"
+    
+    This reverts commit 9cc1ea526cc35de77b0d2118527d533f1d794e26, reversing
+    changes made to adee0867bcc192bcb6262847988edcc406025a5d.
+
+commit 9cc1ea526cc35de77b0d2118527d533f1d794e26
+Merge: adee086 66a5c07
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 18:08:47 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit adee0867bcc192bcb6262847988edcc406025a5d
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 18:07:18 2020 +0200
+
+    Update rapport_bad_G3V2.Rmd
+
+commit 66a5c07f40225b90f124380220771d1d5e143c2d
+Merge: 363ea7b 689a854
+Author: oriannecosi <64475285+oriannecosi@users.noreply.github.com>
+Date:   Wed Apr 29 18:04:56 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 363ea7b51089674e4322ad2ee70134a9fda28628
+Author: oriannecosi <64475285+oriannecosi@users.noreply.github.com>
+Date:   Wed Apr 29 18:04:16 2020 +0200
+
+    test orianne version 1000
+
+commit 689a854aba39e375a3a4186f85d1c6b559f39e0d
+Author: Perrine98 <perrine.truche@free.fr>
+Date:   Wed Apr 29 18:01:28 2020 +0200
+
+    Create graphique regions.R
+
+commit 0cbfa3ec9a4ac92b9111b424379ed4e7606b132f
+Merge: 2cc57e8 60bee01
+Author: Perrine98 <perrine.truche@free.fr>
+Date:   Wed Apr 29 17:55:15 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 60bee014b5509205d23026d18634a6010d5748f0
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 17:49:03 2020 +0200
+
+    Create imagegp.Rmd
+
+commit 416676d4872668d89cfdce56727f40e9d31778cb
+Merge: b459ff2 cd2c2f7
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 17:48:49 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 2cc57e8ba876e27b058cb1968ea190cb455d1f2d
+Author: Perrine98 <perrine.truche@free.fr>
+Date:   Wed Apr 29 17:47:43 2020 +0200
+
+    Create graphique régions.rmd
+
+commit b459ff2c9cb03f5bbbd4ab899bc28420313229fb
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 17:47:34 2020 +0200
+
+    Create logoisara.png
+
+commit 5fb950b99945dc17cdd22113a485f47de828d471
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 17:47:09 2020 +0200
+
+    Create imagegp.html
+
+commit cd2c2f76d109fe164d7071c6d36781fc86fe2a66
+Author: oriannecosi <64475285+oriannecosi@users.noreply.github.com>
+Date:   Wed Apr 29 17:44:56 2020 +0200
+
+    test orianne
+
+commit 70bc9be5e673d1d18b9e8981b3a42b076c881ff9
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 17:42:59 2020 +0200
+
+    doc TinyTex terminé
+
+commit 60574ceef5f58e824b98dd97e9bf7140b9a81675
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 17:31:06 2020 +0200
+
+    création de TinyTex
+
+commit fff493dddbee09696a6bf36649c2516fb118486f
+Merge: db1c8e5 ebc90e4
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 17:24:12 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit db1c8e5b58b907c6dc94564b1143ec8703c2b3cd
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 17:23:33 2020 +0200
+
+    Delete datatempville-1.png
+
+commit f32e6371148f9d398fefeae58cc43815032ef222
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 17:23:27 2020 +0200
+
+    Create .gitignore
+
+commit ebc90e44be43b4fb8d806eda4f064e9206fcb56b
+Merge: 7706145 e9a10af
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 17:08:55 2020 +0200
+
+    nouvelle version
+
+commit 77061450bc694c45729801427970aa6da13a0b60
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 17:08:17 2020 +0200
+
+    rien
+
+commit e9a10af8d5467ad97c5620944e15fb40460790aa
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 17:01:15 2020 +0200
+
+    Update rapport_bad_G3V2.Rmd
+
+commit ab3f3bc4f8c5bd4584735ce0b44545324f3174ae
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 17:01:08 2020 +0200
+
+    Create chargement librairies.R
+
+commit 3c3a0a5f990d48c6923fb5dd4d001ec784cf9515
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 16:53:00 2020 +0200
+
+    Create Groupe-3-OPEN.Rproj
+
+commit 9ed6487e40c0bf58d0b6817370d0e5b4009996ae
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 16:45:19 2020 +0200
+
+    Update rapport_bad_G3V2.Rmd
+
+commit 9c953b9cd005daa0e88dae174528f40b7c818a9c
+Merge: 2477a90 2064686
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 16:41:01 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 2477a909563943b0b8fba278a55871f499d04d33
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 16:39:12 2020 +0200
+
+    taille graph 5
+
+commit 20646866834cadfcbe62a33b14ae0260e180490a
+Merge: e76faab 774b618
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 16:02:16 2020 +0200
+
+    rien
+
+commit e76faab693705590ce1cbfe542a4319c497a342e
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 16:01:22 2020 +0200
+
+    rien
+
+commit 774b618f8e855da58bee7020413d96c9d512ca19
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 15:59:37 2020 +0200
+
+    ligne 79+47
+
+commit 6066f6ea290ac6ab1e83b8fbcc92e076e0392e29
+Merge: 5f7e45e 02c7eee
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 15:34:29 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 5f7e45ebe3263dcde2b1b970d4d976fa7a9fff85
+Author: Maële <mmaleysson@etu.isara.fr>
+Date:   Wed Apr 29 15:26:34 2020 +0200
+
+    Create rapport_bad_G3V2.Rmd
+    
+    V2 Maele
+
+commit 02c7eee2fc87c225602c9818e6630e640eb205b6
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 14:06:58 2020 +0200
+
+    suppression de la  partie l93
+
+commit 7f80cd9cad2c471d1194e3f51f069f3bf02ea5dc
+Merge: 709f20e 2e2cae9
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 10:01:06 2020 +0200
+
+    Merge branch 'master' of https://github.com/Basa84/Groupe-3-OPEN
+
+commit 709f20eee41210e7b1e816ae801f466cb80f9998
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 10:01:02 2020 +0200
+
+    petites modifs
+
+commit 2e2cae921c2686ea1197851acfcce7022b5303f0
+Author: guerin <vguerin@etu.isara.fr>
+Date:   Wed Apr 29 09:58:44 2020 +0200
+
+    Update rapport_bad_G3.Rmd
+
+commit 2c4446038f8f07e8a2ec0e614b013de32c7a202c
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 09:48:40 2020 +0200
+
+    Rétrécissement du graphique des températures mensuelles
+
+commit 6f0e00f08a1bd846e11d9c8c51d679f90b261fb4
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 09:25:25 2020 +0200
+
+    ajout des nouveaux fichiers
+
+commit 98bcf6fe1e535287f06e99fb6bb6305e62b62ad7
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 09:13:51 2020 +0200
+
+    Première version du rapport
+
+commit 62f0878146b2dccb9427e69f31bb0186751f5454
+Author: Basa84 <bsauze@etu.isara.fr>
+Date:   Wed Apr 29 09:10:03 2020 +0200
+
+    Initial commit
