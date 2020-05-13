@@ -127,12 +127,23 @@ vous pouvez trouvez ces différentes fonctionnalité et d'autres encore à l'adr
 
 Dans un document R Markdown il est possible d'insérer du code au sein d'un texte. Cela permet par exemple d'afficher des graphiques, des tableaux, ou simplement afficher une portion de code pour expliquer comment a été réalisé une anlyse sous R.
 L'endroit où l'on peut écrire du code dans un document R Markdown s'appel chunk et il ressemble à cela :
-
-```{rimage3, echo=FALSE,eval=TRUE,out.width = '50%', fig.align = "center"}
-knitr::include_graphics("chunk.jpg")
-#fonctionne pas !
+```{r image3, echo=FALSE,eval=TRUE,out.width = '70%', fig.align = "center"}
+knitr::include_graphics("chunkVide.jpg")
 ```
 
+Pour génerer un chunk il existe plusieur manière, premièrement vous pouvez rédiger 3 apostrophe AltGr7, r entrecrochet, u saut de ligne et encore 3 apostrophe AltGr7. Deuxièmement, vous pouvez utiliser le raccourci clavier `Ctrl+Alt+i` ou cliquer sur l'icone
+```{r image4, echo=FALSE,eval=TRUE,out.width = '10%', fig.align = "center"}
+knitr::include_graphics("BtnChunk.png")
+```
+
+
+La partie `{r}` permet de choisir ce que l'on veut afficher sur le rapport final, elle permet donc de choisir les options des blocs de code R. Lorsqu'on rajoute `echo=FALSE` cela veut dire que l'on ne veu pas afficher le code du chunk, dans le cas où on met `echo=TRUE` cela affichera le code sur le rendu, c'est la valeur qui lui est donné par défaut. L'ajout de `eval=FALSE` entraine la non exécution du code R présent dans le chunk, eval est par défaut vraie. La fonction `include`permet de cummuler les fonctions `eval` et `echo`, c'est à dire d'ajout le code R et ses résultats. Si l'on rajoute `warning=TRUE` dans les options, cela permet d'aficher les avertissements causé par ce bloc, cela permet donc de débuger plus facilement le code qui a été rédigé. L'option `message=TRUE` fait quasiment la même chose que warning sauf que cela affiche les messages générés par le chunk.
+
+Pour plus d'options vous pouvez vous renseigner grâce à l'image suivante:
+
+![](OptionChunk.png)
+
+Ensuite, à l'intérieur du chunk, vous pouvez écrire du code R comme vous l'auriez fait dans un script R. Vous pouvez donc afficher des tableaux, une parte du tableau, des graphiques, des images, etc. 
 
 
 
