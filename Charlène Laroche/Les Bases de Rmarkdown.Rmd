@@ -108,24 +108,35 @@ Pour écrire en gras et en italique il faut mettre *** de chaque côté du texte
 2. item 2
     i) sous-item 1
 
-Que ce soit pour les titre ou pour les listes à puces, il est important de bien noté qu'il faut un espace entre le texte et le dièse ou l'étoile.
+Pour pouvoir faire une liste à puce, il faut mettre une étoile et un espace avant le texte, comme ceci `* `. Lorsqu'on veut faire des sous puces, il faut rajouter une ou plusieurs tabulation devant l'étoile, celon le nombre de retrait que l'on souhaite. Pour que ces lises à puces soit numérotées, on peut remplacer l'étoile par des chiffres et pour des sous puces, on peut remplacer l'étoile par un plus ou un moins, cela channge le style de la puce.
 
-   <!--comentaire de texte--> permet de mettre un commentaire sans qu'il soit afficher sur le document final.
+Que ce soit pour les titre ou pour les listes à puces, il est important de bien noté qu'il faut un espace entre le texte et le dièse ou l'étoile, sinon la mise en forme ne sera pas réalisée.
+
+`<!--commenté votre texte-->` permet de mettre un commentaire sans qu'il soit afficher sur le document final.
 
 Deux méthodes pour insérer un lien: 
-    <http://www.rstudio.com> ou `[link](www.rstudio.com)`
+`<http://www.rstudio.com>` ou `[link](www.rstudio.com)`
 
 Pour ajouter une image: `![Caption](Rstudio.jpg)`
 
-vous pouvez trouvez ces dfférentes fonctionnalité et d'autres fonctionnalités à l'adresse <https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf>
+vous pouvez trouvez ces différentes fonctionnalité et d'autres encore à l'adresse:  <https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf>
 
 
 
-### La partie code R du document
+### La partie code R du document ou chunk
+
+Dans un document R Markdown il est possible d'insérer du code au sein d'un texte. Cela permet par exemple d'afficher des graphiques, des tableaux, ou simplement afficher une portion de code pour expliquer comment a été réalisé une anlyse sous R.
+L'endroit où l'on peut écrire du code dans un document R Markdown s'appel chunk et il ressemble à cela :
+
+```{rimage3, echo=FALSE,eval=TRUE,out.width = '50%', fig.align = "center"}
+knitr::include_graphics("chunk.jpg")
+#fonctionne pas !
+```
 
 
 
-# Exemple de bibliographie
+
+# Exemple de citation
 
 @hansen_why_nodate
 
