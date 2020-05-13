@@ -9,7 +9,7 @@ output:
     toc: yes
     toc_depth: 3
 csl: iso690-author-date-fr-no-abstract.csl
-bibliography: Biblio.bib
+bibliography: R_Markdown.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -149,14 +149,12 @@ Ensuite, à l'intérieur du chunk, vous pouvez écrire du code R comme vous l'au
 
 # Exemple de citation
 
-@hansen_why_nodate
+@barnier_r_2020
 
-[@global_change_research_program_glossary_nodate]
+[@r_studio_introduction_2016]
 
-@national_research_council_global_2000
+@grolemund_r_2020
 
-@noszczyk_review_2019
 
-@holman_improving_2019
 
 
