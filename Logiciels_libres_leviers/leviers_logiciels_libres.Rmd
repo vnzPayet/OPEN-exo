@@ -1,27 +1,35 @@
+
 ---
-title: "La démocratisation des logiciels libres"
-author: "Dylan Clair, Salomé Hamard et Anne-Laure Girard"
+title: "**La démocratisation des logiciels libres**"
+author: "*Dylan Clair, Salomé Hamard et Anne-Laure Girard*"
 date: "04/05/2020"
 output:
-  pdf_document: default
+  pdf_document: 
+    toc: yes
+    toc_depth: 3
   html_document: default
-  toc : true 
-  toc_depth: 2
   theme : united
 bibliography: biblio.bib
 csl: ../iso690-author-date-fr-no-abstract.csl
+
 ---
 
+```{r logo, echo=FALSE, out.width = '20%', fig.align = "center"}
+knitr::include_graphics(c("../Isara-quadri.jpg", "../logoR.jpg"))
+```
+
+
+\newpage
 # Qu'est-ce qu'un logiciel libre?
 
-D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source) : 
+  D’aprés la Free Software Fundation un logiciel libre garantit 4 libertés fondamentales (communes aux logiciels libres et à l'open source)[@modification__27062015_2018_quest-ce_2015] : 
 
 * liberté d'**exécuter** le logiciels, de le faire fonctionner comme on le souhaite
 * liberté d'**étudier le fonctionnement du programme**, de le **modifier** et **l'adapter** à nos besoins pour cela l'**accès au code source** est un indispensable
 * liberté de **copier et redistribuer** le logiciel
 * liberté de **distribuer des copies modifiées** du logiciel permettant ainsi **d'améliorer** le logiciel et de promouvoir ces modifications.
 
-Open Source Initiative ajoute d'autres principes à ces libertés. Par exemple :
+Open Source Initiative ajoute d'autres principes à ces libertés[@noauthor_open_2020]. Par exemple :
 
 * la **non discrimination** de personne ou de groupe
 * ne pas discriminer les **différents usages** qui pouraient être fait du logiciel, notamment pour permettre l'usage, le développement et la distribution commerciale
@@ -30,22 +38,38 @@ Ces libertées sont garanties par une licence libre.
 
 Les logiciels sont dit libres dans le sens liberté de les modifier, améliorer, de les diffuser… mais pas nécessairement gratuit.
 
-Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités.
-
-A-L Bla bla bla @framasoft_framasoft_2020
-
-# Avantages et inconvenients
-
-## Avantages
+Pour certaines communautés Open source et Logiciels Libres se différencient essentiellement par leur philosophie / leur vision mais les libertées qu'ils défendent se recoupent en majorités[@framasoft_framasoft_2020].
 
 
-## Inconvenients
+#  Pourquoi choisir un logiciel libre?
+
+  Les logiciels libres sont de plus en plus utilisés par la population française et apportent de nombreux bénéfices aux utilisateurs[@noauthor_cnll_2017]. 
+
+## Les avantages
+
+  Les logiciels libres ont de nombreux interêts à être utilisés par rapport aux logiciels propriétaires. Tout d'abord ils sont **gratuits** ou peu couteux, accessibles à tous et de qualités.
+Ces logiciels ont un grand avantage qui est d'être **adaptable**. En effet tout utilisateur peut analyser et modifier le code source. Cela permet de pouvoir vérifier le contenu et les fonctionalités du logiciel, ce qui **assure la fiabilité des algorithmes**. Il est aussi possible de les modifier et de les adapter pour qu'ils **correspondent au mieux à nos besoins**. Les logiciels peuvent ainsi être améliorés constament par les utilisateurs. Les possibilités sont beaucoup plus grandes par les open source car nous pouvons modifier les codes facilement et avoir la main sur les logiciels[@guely_avantages_2002].
+  Les logiciels libres ont aussi un avantage à ne pas négliger qui est la liberté d'utilisation des données des utilisateurs qui ne sont pas réutilisées ou revendues par les créateurs des logiciels. Les vies privées des utilisateurs ne sont donc pas impactées, il n'y a **aucune prise de contrôle sur nos vies personnelles**.
+
+## Les inconvenients
+
+  Le choix d'utilisation d'un logiciel libre a aussi des inconvénients comme devoir se **former** sur ces logiciels qui sont souvent un peu différents des logiciels propriétaires. De plus il y a souvent **peu de supports techniques** ou d'aide à la maintenance, ce qui peut en arrêter quelques uns.
+Le choix du logiciel peut aussi être difficile quand nous nous retrouvons devant des logiciels et des distributeurs qui se ressemblent beaucoup. Souvent les logiciels libres sont moins performants que les propriétaires, et évoluent moins vite. Ces logiciels ont aussi parfois des problèmes d'hebergement, ce coût étant assez élevé[@noauthor_avantages_2020]. 
+De plus la configuration des logiciels libre est complexe, ce qui peut être difficile pour un utilisateur non aguerri.
+  Enfin certaines licences, comme GPL2, demmande que **toute modification du logiciel**(par son code) **soit publiée  sous une licence** GPL2 (qui est très restricive) car cela permet au logiciel d'être libre et que tout utilisateur ait les améliorations.
+
 
 # Leviers pour diffuser les logiciels libres
 
+
+  Afin de favoriser une utilisation plus larges des logiciels libres, il faudrait que les utilisateurs apprennent à manipuler ces outils dés qu'ils débutent en informatique. Pour cela, les écoles, du primaire jusqu'au supérieur, pourraient avoir des parcs informatiques utilisants des ressouces libres. Cela permettrait aux entreprises de travailler avec ce type d'outils et les inciteraient à avoir des outils plus adapté à leurs besoins ainsi qu'une meilleure protection de leurs données. 
+  Des initiations aux logiciels libres permettraient de réaliser une transition douce et d'avoir le choix entre plusieurs outils.
+  La population aurai aussi une meilleure connaissance des impacts de leurs apport de données, avec moins de négligences sur la protection de leurs données personnelles.
+  Cela permettrait une conscience collective des logiciels non libres qui utilisent entrent constamment dans nos vies privées et utilisent nos données plus ou moins à notre insu.
+  
 ---
-nocite:
-@framasoft_framasoft_2020, @guely_definition_2002, @guely_avantages_2002, @guely_convergence_2002, @noauthor_index_2009, @noauthor_open_2020, @modification__27062015_2018_quest-ce_2015, @noauthor_cnll_2017
+nocite: '@*'
 ...
 
-#*Bibliographie*
+\newpage
+# *Bibliographie*
