@@ -1,0 +1,39 @@
+## **Les valeurs propres**
+
+Elles permettent de determiner la proportion d'intertie expliquée par chacuns des axes.  
+
+```{r valp, echo = T,eval=T,fig.cap="Valeurs propres",fig.height = 3, fig.align = "center",fig.width = 7}
+res <- PCA(datatemp, quanti.sup=13:16, quali.sup=17,graph=F)
+par(mfrow=c(1,1),mar=c(4,4,2,2))
+barplot(res$eig[,2],ylab="Inertie %",names.arg = paste("Axe",1: nrow(res$eig)),las=2,cex.axis=0.9,cex.lab=1, ylim = c(0,90), xlim = c(0,5.5))
+```
+
+**Interpretation**: Nous observons qu'il met en avant que `r round(res$eig[1,2],2)`$\%$ de l'intertie totale est utilisé avec l'axe 1 et `r round(res$eig[2,2],2)`$\%$  par l'axe 2. 
+
+
+## **Le cercle des corrélations**
+
+**Interpretation**: Nous observons que en d'octobre à mars nous avons en France des températues plus basses qu'en saison estivales (d'avril à semptemre). mais on peu voir que les périodes les plus chaudes sont de mai à juin et que celles qui se rapprochent le plus de la moyenne des températures françaises sur l'année  sont les mois de septembre, novembre, mars et avril.
+
+```{r indiv, echo = T,eval=T,fig.cap="Cercle des corrélations",fig.height =5 ,fig.align = "center", fig.width = 5}
+plot.PCA(res, choix="var",cex.axis=0.7,cex.lab=0.8)
+```
+
+## **Le nuage des individus**
+
+```{r circle, echo = T,eval=T,fig.cap="Nuage des individus",fig.height = 5,fig.align = "center", fig.width = 5, fig.align = "center",}
+plot.PCA(res, choix="ind", habillage=17,cex.axis=0.7,cex.lab=0.8)
+```
+
+**Interpretation**: Nous observons que les villes du Nord Ouest se caractérisent par des températures moins élevées que la plupart des autres régions. Les villes du Nord Est sont plutôt .......... La région Sud Est prends en compte des températures très différentes avec des écart de température entre les villes distinc. Enfin la région Sud ouest est une région avec des tepératures hautes tout le long de l'année. Nous pourrions faire une catégorie région Sud qui ont des températures assez similaires avec une importante température l'été et des températures minimales supérieur à 0°C
+
+&nbsp;
+
+## **Conclusions  **
+
+Les variations mensuelles des température semblent être liées aux differents climats existants en France et plus largement en Europe [@rebetez2006heat]. Néanmoins la France est soumise à des changements climatiques [passés, ex :  @moisselin2002changements; et présents, ex :  @lespinas2010impact]. Ceci pourrait fortement impacter les activités agricoles notament la viticulture @cook2016climate même si @van2013climate suggère que ces changements pourraient ne pas être ausi marqués que prévu. 
+...........................................................................
+
+...........................................................................
+
+

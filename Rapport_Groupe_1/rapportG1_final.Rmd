@@ -1,0 +1,27 @@
+---
+title: Compilation de données
+author: Par le groupe 1 (Les apprentis d'Avignon)
+date: 
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: true
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+bibliography: biblio2.bib
+---
+
+```{r child = 'rapportG1Elo-jusqua-valeurs-propres.Rmd'}
+# Partie 1 : Premiere analyse
+```
+
+```{r child = '2_valeur_propre.Rmd'}
+# Partie 2 : Création d'une fonction graphique
+```
+
+
+
