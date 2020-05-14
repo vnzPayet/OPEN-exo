@@ -3,17 +3,17 @@ title: "Générer des pdf"
 author: "Juliette MAYER & Paul SERVAIN"
 date: "04/05/2020"
 output:
-  pdf_document:
-    fig_caption: yes
-    number_sections: yes
-    toc: yes
-    toc_depth: 3
   html_document:
     fig_caption: yes
     number_sections: yes
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
   word_document:
     toc: yes
     toc_depth: '3'
@@ -61,13 +61,13 @@ Vous pouvez à présent faire un **"Knit" au format pdf**, en cliquant sur les b
 
 * La flèche à droite du bouton *Knit*
 * *Knit to PDF*
-L'image suivante indique quels sont les boutons mentionnés ci-dessus :
+L'image suivante [@noauthor_convert_2016] indique quels sont les boutons mentionnés ci-dessus :
 
 ```{r knitpdf, echo=FALSE, out.width = '45%', fig.align = "center",fig.cap="Knit au format PDF"}
 knitr::include_graphics("capture3.png")
 ```
 
-Ainsi, vous avez pu générer un document PDF à partir de votre fichier R markdown
+Ainsi, vous avez pu générer un document PDF à partir de votre fichier R markdown [@rochette_rmarkdown_2017]
 
 
 # **Références**

@@ -1,0 +1,30 @@
+```{r,echo=FALSE}
+#Synchronisation des fichiers (clonage, ...)
+```
+
+Pour gérer les fichiers présents dans son dépôt, on utilise l'invite de commande et on commence par créer une copie locale de notre dépôt. <br/> 
+Pour cela on ouvre l'invite de commandes de notre ordinateur et on accède au lieu où l'on veut stocker notre dépôt par la commande cd :
+
+*Par exemple : pour accéder au fichier Groupe2 dans ses documents, on ouvre son invite de commande et on tape * `cd Documents` *puis entrer et  *`cd Groupe2` *et entrer*
+
+Une fois dans le dossier souhaité, on peut cloner le dépôt. Pour cela on utilise :
+
+* **git clone** *'adresse du dépôt'*
+
+Une fois le dépôt cloné, on peut modifier les fichiers directement sur notre ordinateur.
+
+Pour mettre à jour notre travail sur notre dépôt en ligne on commence par mettre à jour notre fichier local par un pull :
+
+* **git pull**
+
+Puis on fait un add, un commit et un push, pour le renvoyer sur git en ligne :
+
+* **git add** *'nom du projet ou du fichier'*
+* **git commit -m** *"Commentaire"*
+* **git push**
+
+**--> Pensez à faire entrer après chaque ligne de commande !**
+
+Normalement, si l'on vérifie en ligne on peut voir le fichier mis à jour.
+
+A noter que pour supprimer un fichier par l'invite de commande, on utilise `rm` suivi du nom du fichier puis entrer.

@@ -1,0 +1,59 @@
+```{r,echo=FALSE}
+#Initialisation du repository
+```
+
+Une fois votre compte GitHub ouvert, allez au [Menu principal](https://github.com/) du site où vous pouvez avoir une vision sur tous les Répertoires que vous avez créé ainsi que ceux que vous avez cloné. 
+&nbsp;
+
+```{r pic1, echo=FALSE, out.width = '80%', fig.align = "center"}
+knitr::include_graphics("espacedetravail.png")
+```
+&nbsp;
+
+*****************************************************************
+
+Pour créer un nouveau Répertoire, cliquez sur le bouton "New" en vert.
+Cela vous amènera sur la page suivante :
+&nbsp;
+
+```{r pic2, echo=FALSE, out.width = '80%', fig.align = "center"}
+knitr::include_graphics("creation.png")
+```
+&nbsp;
+
+*****************************************************************
+
+***"Owner"*** indique le propriétaire du répertoire, le compte qui a tous les droits : l'administrateur.
+&nbsp;
+
+***"Repository name"*** correspond à l'emplacement où vous pouvez choisir le nom du répertoire. Il est conseillé de l'avoir en 1 seul mot (peut être composé de plusieurs mots mais attachés avec des caractères spéciaux comme `&` `-` `_`).
+&nbsp;
+
+***"Description"*** correspond à la description qui sera faite en haut de votre répertoire.
+&nbsp;
+
+***"Public/Private"*** permet de choisir si le répertoire est visible de tous ceux qui visitent le profil du créateur ou non. En cas de "Private", il faut une autorisation d'accès.
+
+***"README.Md"*** correspond à un fichier en Markdown donnant les informations principales du répertoire. Il est souvent utilisé pour donner les consignes, des indications ou les notes de mises à jour.
+
+***"Add .gitignore"*** permet de créer un fichier `.gitignore` qui peut être édité textuellement. Ainsi, si le dossier contient :
+
+`'*.txt' ` --> le fait de mettre un astérisque permet d'ignorer lors du push tous les fichiers se terminant par l'extension `.txt`.  
+`'Projet1.docx'` --> cette ligne permettra de ne pas synchroniser avec le répertoire en ligne le fichier appelé `Projet1.docx`.  
+Par contre, `*.docx` fera que lors du push, tous les fichiers `.docx` seront ignorés.  
+Cela est pratique lors de la création en commun de dossiers contenant des fichiers R car celui-ci créé automatiquement des fichiers `.Rhistory` et ainsi, écrire dans le .gitignore `.Rhistory` ignorera automatiquement tous les fichiers `.Rhistory`. 
+
+***"Add a license"*** permet d'ajouter une license au répertoire, c'est à dire indiquer aux personnes, qui téléchargent/utilisent le répertoire et ce qu'il contient, qu'ils doivent respecter les conditions de la License (CC BY, ...).
+&nbsp;
+
+Une fois votre répertoire créé, celui-ci est disponible dans votre onglet *Repositories* et vous pouvez le gérer à votre guise.
+
+```{r pic3, echo=FALSE, out.width = '80%', fig.align = "center"}
+knitr::include_graphics("repository.png")
+```
+&nbsp;
+
+*****************************************************************
+
+
+

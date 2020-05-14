@@ -8,6 +8,8 @@ output:
     number_sections: yes
     toc: yes
     toc_depth: 3
+csl: iso690-author-date-fr-no-abstract.csl
+bibliography: R_Markdown.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -49,24 +51,24 @@ Après avoir rempli ces différentes informations en choisissant de créer un do
 ### L'en tête
 
 Le début du script ou son en tête  est encadré par trois tirets, comme ci-après.
-```{r, echo = T,eval=F}
----
-title: "Utiliser Rmarkdown"
-author: "C. Laroche"
-date: "04/05/2020"
-output: html_document
----
-```
+    
+
+    ---
+    title: "Utiliser Rmarkdown"
+    author: "C. Laroche"
+    date: "04/05/2020"
+    output: html_document
+    ---
+
 On remarque que cette partie contient en faite les métadonnées du fichier (tire, auteur, date, format final du document). C'est ici que l'on pourra modifier la forme global du document, en ajoutant par exemple une table des matières dont on peut choisir le format.
 Pour ajouter une table des matière il suffit de rajouter `toc: yes` à la ligne avec une tabulation de plus du format de sortie, comme ci-après:
-```{r, echo = T,eval=F}
-output: 
-  html_document:
-    toc: yes
-    toc_depth: 3
-    toc_float: yes
----
-```
+
+    output: 
+      html_document:
+        toc: yes
+        toc_depth: 3
+        toc_float: yes
+    ---
 
 La table des matières ou table of content (toc) en anglais, peut être modifié à votre convenance, de nombreuses fonctionnalité existe, comme `toc_depth` qui permet de choisir à quel niveau la table des matières doit s'arrêter, ici on va jusqu'au troisième titre, `toc_float` ne peut être utilisé que sous un format html car cela permet d'avoir un menu déroulant.
 
@@ -77,51 +79,82 @@ Comme R est un language de programmation, il est très important de respecter to
 On différencie le texte du code R sur Rstudio par son fond blanc, contre in fond grisé pour le code. Cette partie peut-être mise en page avec des titres, des tirets, des mises en forme pour le texte ou les formules.
 Etudions quelques examples de fonctionnalité:
 
-Pour écrire en italique il faut mettre * dechaque côté du texte: *italique*
-Pour écrire en gras il faut mettre ** dechaque côté du texte: **gras** 
-Pour écrire en gras et en italique il faut mettre *** dechaque côté du texte: ***les deux*** 
+Pour écrire en italique il faut mettre * de chaque côté du texte: *italique*
+Pour écrire en gras il faut mettre ** de chaque côté du texte: **gras** 
+Pour écrire en gras et en italique il faut mettre *** de chaque côté du texte: ***les deux*** 
 
-`code au sein d'un texte` ajouter ``de chaque côté 
+`pour mettre du code au sein d'un texte` ajouter ``de chaque côté (grâce à AltGr7)
 
 `$A = \pi*r^{2}$` = $A = \pi*r^{2}$
+
 `$$E = mc^{2}$$` = $$E = mc^{2}$$
 
-'# Header1' =
 # Header1
+    # Header1
+
 ## Header 2 
+    ## Header 2 
+    
 ### Header 3 
-#### Header 4
-##### Header 5
-###### Header 6
-<!--comentaire de texte-->
-<http://www.rstudio.com>
-[link](www.rstudio.com)
-Jump to [Header 1](#anchor)
+    ### Header 3
 
-* unordered list
-+ sub-item 1
-+ sub-item 2
-- sub-sub-item 1
+* liste non ordonnées
+  + sous-item 1
+  + sous-item 2
+    - sous-sous-item 1
 * item 2
-Continued (indent 4 spaces)
-1. ordered list
+
+1. liste ordonnée
 2. item 2
-i) sub-item 1
-A. sub-sub-item 1
-(@) A list whose numbering
-continues after
-(@) an interruption
-Term 1
-: Definition 1
+    i) sous-item 1
 
-- slide bullet 1
-- slide bullet 2
-(>- to have bullets appear on click)
-horizontal rule/slide break:
-***
-A footnote [^1]
-[^1]: Here is the footnote.
+Pour pouvoir faire une liste à puce, il faut mettre une étoile et un espace avant le texte, comme ceci `* `. Lorsqu'on veut faire des sous puces, il faut rajouter une ou plusieurs tabulation devant l'étoile, celon le nombre de retrait que l'on souhaite. Pour que ces lises à puces soit numérotées, on peut remplacer l'étoile par des chiffres et pour des sous puces, on peut remplacer l'étoile par un plus ou un moins, cela channge le style de la puce.
+
+Que ce soit pour les titre ou pour les listes à puces, il est important de bien noté qu'il faut un espace entre le texte et le dièse ou l'étoile, sinon la mise en forme ne sera pas réalisée.
+
+`<!--commenté votre texte-->` permet de mettre un commentaire sans qu'il soit afficher sur le document final.
+
+Deux méthodes pour insérer un lien: 
+`<http://www.rstudio.com>` ou `[link](www.rstudio.com)`
+
+Pour ajouter une image: `![Caption](Rstudio.jpg)`
+
+vous pouvez trouvez ces différentes fonctionnalité et d'autres encore à l'adresse:  <https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf>
 
 
-### La partie code R du document
+
+### La partie code R du document ou chunk
+
+Dans un document R Markdown il est possible d'insérer du code au sein d'un texte. Cela permet par exemple d'afficher des graphiques, des tableaux, ou simplement afficher une portion de code pour expliquer comment a été réalisé une anlyse sous R.
+L'endroit où l'on peut écrire du code dans un document R Markdown s'appel chunk et il ressemble à cela :
+```{r image3, echo=FALSE,eval=TRUE,out.width = '70%', fig.align = "center"}
+knitr::include_graphics("chunkVide.jpg")
+```
+
+Pour génerer un chunk il existe plusieur manière, premièrement vous pouvez rédiger 3 apostrophe AltGr7, r entrecrochet, u saut de ligne et encore 3 apostrophe AltGr7. Deuxièmement, vous pouvez utiliser le raccourci clavier `Ctrl+Alt+i` ou cliquer sur l'icone
+```{r image4, echo=FALSE,eval=TRUE,out.width = '10%', fig.align = "center"}
+knitr::include_graphics("BtnChunk.png")
+```
+
+
+La partie `{r}` permet de choisir ce que l'on veut afficher sur le rapport final, elle permet donc de choisir les options des blocs de code R. Lorsqu'on rajoute `echo=FALSE` cela veut dire que l'on ne veu pas afficher le code du chunk, dans le cas où on met `echo=TRUE` cela affichera le code sur le rendu, c'est la valeur qui lui est donné par défaut. L'ajout de `eval=FALSE` entraine la non exécution du code R présent dans le chunk, eval est par défaut vraie. La fonction `include`permet de cummuler les fonctions `eval` et `echo`, c'est à dire d'ajout le code R et ses résultats. Si l'on rajoute `warning=TRUE` dans les options, cela permet d'aficher les avertissements causé par ce bloc, cela permet donc de débuger plus facilement le code qui a été rédigé. L'option `message=TRUE` fait quasiment la même chose que warning sauf que cela affiche les messages générés par le chunk.
+
+Pour plus d'options vous pouvez vous renseigner grâce à l'image suivante:
+
+![](OptionChunk.png)
+
+Ensuite, à l'intérieur du chunk, vous pouvez écrire du code R comme vous l'auriez fait dans un script R. Vous pouvez donc afficher des tableaux, une parte du tableau, des graphiques, des images, etc. 
+
+
+
+# Exemple de citation
+
+@barnier_r_2020
+
+[@r_studio_introduction_2016]
+
+@grolemund_r_2020
+
+
+
 

@@ -61,6 +61,7 @@ De plus la configuration des logiciels libre est complexe, ce qui peut être dif
 
 # Leviers pour diffuser les logiciels libres
 
+
   Afin de favoriser une utilisation plus larges des logiciels libres, il faudrait que les utilisateurs apprennent à manipuler ces outils dés qu'ils débutent en informatique. Pour cela, les écoles, du primaire jusqu'au supérieur, pourraient avoir des parcs informatiques utilisants des ressouces libres. Cela permettrait aux entreprises de travailler avec ce type d'outils et les inciteraient à avoir des outils plus adapté à leurs besoins ainsi qu'une meilleure protection de leurs données. 
   Des initiations aux logiciels libres permettraient de réaliser une transition douce et d'avoir le choix entre plusieurs outils.
   La population aurai aussi une meilleure connaissance des impacts de leurs apport de données, avec moins de négligences sur la protection de leurs données personnelles.

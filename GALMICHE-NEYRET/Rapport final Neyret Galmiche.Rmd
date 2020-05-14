@@ -9,11 +9,19 @@ output:
     toc: yes
     toc_depth: 4
     toc_float: true
+<<<<<<< HEAD
+    csl: iso690-author-date-fr-no-abstract.csl
+    bibliography: biblio.bib
   pdf_document:
     toc: yes
     toc_depth: 3
-bibliography: biblio2.bib
+=======
+  pdf_document:
+    toc: yes
+    toc_depth: 3
+bibliography: biblio.bib
 csl: iso690-author-date-fr-no-abstract.csl
+>>>>>>> ec4783fc4c8f838b31e931bf90a02f5834fee719
 ---
 
 ```{r setup, include=FALSE}
@@ -40,10 +48,13 @@ knitr::include_graphics("intelligence-artificielle.png")
  **Chemin d'accès aux données **
  Les données sont téléchargeables directement sur [ce site](https://isaranet.fr/), elles sont accessibles aux étudiants de la promotion 49 ISARA, en suivant le chemin: Cours en ligne > Ingénieur > 2019-2020 > Module D > OPEN 
  
+<<<<<<< HEAD
+=======
 ```{r datatemp, echo = TRUE}
 link <- "http://factominer.free.fr/course/donnees/AnaDo_JeuDonnees_TemperatFrance.csv"
 datatemp <- read.table(link, h=TRUE, sep=";", dec=".", row.names=1, encoding="latin1")
 ```
+>>>>>>> ec4783fc4c8f838b31e931bf90a02f5834fee719
 
 
 # **Historique - Les grands acteurs**
@@ -72,12 +83,19 @@ Elle se base également sur le Big Data, comprenant les 3V qui sont: Volume, Var
 
 L'IA actuelle se base sur diffrentes phases d'apprentissage: 
 
-
-```{r graph, echo=FALSE, out.width = '50%', fig.align = "center", fig.cap="Phases apprentissage"}
+```{r graph, echo=FALSE, out.width = '70%', fig.align = "center", fig.cap="Phases apprentissage"}
 knitr::include_graphics("phase-apprentissage.png")
 ```
 
-# **Les phases **
+L'IA se base également sur différentes machine learning comme le Clustering hiérarchique, le k-means, le KNN, la réduction dimensionnelle, le neurone artificiel, etc...
+
+# **L'avenir de l'IA **
+
+L'avenir de l'IA est d'aider les être humains dans leur vie quotidienne et professionnelle comme durant les actes médicaux, dans la gestion du terrorisme, etc...
+
+Toutefois, des questions se posent encore et nous devons faire preuve de vigilance dans son développement et sa gestion. Afin de rester éthique, tout en gardant un équilibre entre sciences, techniques et technologies. Il faudrait également veiller à ce que l'humain rester maître de son outils. 
+
+*L'Humain est à la base ... et il doit le rester!*
 
 # **Références**
 
